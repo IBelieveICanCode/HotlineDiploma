@@ -139,11 +139,17 @@ public class HUD : MonoBehaviour
     public void ShowWindow(GameObject window)
     {
         window.GetComponent<Animator>().SetBool("Opened", true);
+        //window.alpha = 1f;
+        //window.blocksRaycasts = true;
+        //window.interactable = true;
         State = GameState.Pause;
     }
     public void HideWindow(GameObject window)
     {
         window.GetComponent<Animator>().SetBool("Opened", false);
+        //window.alpha = 0f;
+        //window.blocksRaycasts = false;
+        //window.interactable = false;
         State = GameState.Play;
     }
 

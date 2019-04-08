@@ -4576,10 +4576,10 @@ RectTransform:
   m_Father: {fileID: 1923115897796168065}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.72274524, y: 0}
+  m_AnchorMin: {x: 0.72055703, y: 0}
   m_AnchorMax: {x: 1, y: 0.18870215}
-  m_AnchoredPosition: {x: -0.026000977, y: 0.13000488}
-  m_SizeDelta: {x: -0.048000336, y: 0.14999962}
+  m_AnchoredPosition: {x: 0.973999, y: 0.13000488}
+  m_SizeDelta: {x: -2.0480003, y: 0.14999962}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &352670674
 Animator:
@@ -26419,7 +26419,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Carpenter Brut - Monday Hunt
+  m_Text: Lily Arciniega - Overdrive
 --- !u!222 &2135904784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26809,8 +26809,8 @@ MonoBehaviour:
   TypeWeapon: {fileID: 1515649501}
   _waveCount: {fileID: 1531489155}
   _scoreLabel: {fileID: 1923115898520673772}
-  _countFinalResult: {fileID: 293356195}
-  _highScoreCount: {fileID: 2048636507}
+  _countFinalResult: {fileID: 2048636507}
+  _highScoreCount: {fileID: 293356195}
   _ammoCount: {fileID: 557868538}
   _songName: {fileID: 0}
   healthBar: {fileID: 540372390}
