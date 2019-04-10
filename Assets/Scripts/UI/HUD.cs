@@ -5,9 +5,17 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
+
 public enum GameState { Play, Pause };
 public class HUD : MonoBehaviour
 {
+    [Header("List of songs")]
+    [SerializeField]
+    private GameObject _buttonsLayout;
+    [SerializeField]
+    private Button _songButton;
+    //public string SongName;
+    [Space]
     public Image FadePlane;
     public Image TypeWeapon;
     [SerializeField]
@@ -26,13 +34,14 @@ public class HUD : MonoBehaviour
     private static float score;
     private static float currentWave;
     private static float ammo;
-
     [SerializeField]
     private Slider healthBar;
     [SerializeField]
     Destructable owner;
     public GameObject GameOverScreen;
-    public GameObject UpgradeScreen;
+    public GameObject MainMenu;
+    //public GameObject UpgradeScreen;
+    public GameObject ChooseSongScreen;
 
     private GameState state;
     static private HUD _instance;
@@ -91,9 +100,10 @@ public class HUD : MonoBehaviour
 
     void Start()
     {
+        ShowWindow(ChooseSongScreen);
         owner.OnDeath += OnGameOver; 
         SetHealthValue();
-        
+        CreateButtonsForSongs();
     }
 
     void Update()
@@ -138,7 +148,8 @@ public class HUD : MonoBehaviour
 
     public void ShowWindow(GameObject window)
     {
-        window.GetComponent<Animator>().SetBool("Opened", true);
+        //window.GetComponent<Animator>().SetBool("Opened", true);
+        window.SetActive(true);
         //window.alpha = 1f;
         //window.blocksRaycasts = true;
         //window.interactable = true;
@@ -146,7 +157,8 @@ public class HUD : MonoBehaviour
     }
     public void HideWindow(GameObject window)
     {
-        window.GetComponent<Animator>().SetBool("Opened", false);
+        window.SetActive(false);
+        //window.GetComponent<Animator>().SetBool("Opened", false);
         //window.alpha = 0f;
         //window.blocksRaycasts = false;
         //window.interactable = false;
@@ -165,6 +177,7 @@ public class HUD : MonoBehaviour
         
         //gameOverScreen.SetActive(true);
     }
+
     public void SetHighScore()
     {
         
@@ -194,11 +207,33 @@ public class HUD : MonoBehaviour
         //gameOverScreen.SetActive(true);
         MenuAudioController.Instance.PlaySound("youdied", false);
         ShowWindow(GameOverScreen);
-
         _countFinalResult.text = "But you've earned " + score + " scores";
         SetHighScore();
 
     }
+   
+    private void CreateButtonsForSongs()
+    {
+        for (int i = 0; i < MenuAudioController.Instance.ListOfSongs.Count; i++)
+        {
+            //print(MenuAudioController.Instance.ListOfSongs.Count);
+            Button button = Instantiate(_songButton);
+            button.transform.parent = _buttonsLayout.transform;
+            button.GetComponentInChildren<Text>().text = MenuAudioController.Instance.ListOfSongs[i].name;
+            button.onClick.AddListener(() => SongChosen(button.GetComponentInChildren<Text>().text));
+            
+        }
+    }
 
+    public void SongChosen(string text)
+    {
+        SongNameCasette(text);
+        MenuAudioController.Instance.PlayMusic(text);
+        HideWindow(ChooseSongScreen);
+    }
 
+    public void SongNameCasette(string song)
+    {
+        _songName.text = song;
+    }
 }

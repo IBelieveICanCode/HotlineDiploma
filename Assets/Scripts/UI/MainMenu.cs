@@ -14,15 +14,12 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 1f;
-        
+        Time.timeScale = 1f;        
     }
 
     public void NewGameButton()
     {
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
-        
-
+        SceneManager.LoadScene(1, LoadSceneMode.Single);       
     }
 
     public void ShowWindow(GameObject window)

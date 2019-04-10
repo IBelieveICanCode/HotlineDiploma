@@ -11,7 +11,7 @@ public class MenuAudioController : MonoBehaviour
     private AudioSource Music;
     [SerializeField]
     private Slider soundSlider;
-
+    public List<AudioClip> ListOfSongs;
     [SerializeField]
     private Slider musicSlider;
 
@@ -59,7 +59,13 @@ public class MenuAudioController : MonoBehaviour
 
     public void StopMusic()
     {
-        Music.Stop();
-           
+        Music.Stop();          
+    }
+    public void PlayMusic(string songName)
+    {
+        string path = "Audio/Songs/";
+        Music.clip = Resources.Load<AudioClip>(path + songName);
+        //Music.name = songName;
+        Music.Play();
     }
 }

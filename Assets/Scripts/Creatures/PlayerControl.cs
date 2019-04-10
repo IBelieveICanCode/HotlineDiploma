@@ -87,7 +87,13 @@ public class PlayerControl: ChooseShootWeapon
     {
         if (!Dash())
             ApplyMovingForce();
-      
+        CheckY();
+    }
+
+    void CheckY()
+    {
+        if (transform.position.y > 0.1)
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
     }
     
     private void ApplyMovingForce()
@@ -125,9 +131,10 @@ public class PlayerControl: ChooseShootWeapon
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            HUD.Instance.ShowWindow(GameObject.FindGameObjectWithTag("MainMenu"));
+            HUD.Instance.ShowWindow(HUD.Instance.MainMenu);
         }
     }
+    /*
     private void OpenUpgrade()
     {
         if (Input.GetKeyDown(KeyCode.R))
@@ -135,6 +142,7 @@ public class PlayerControl: ChooseShootWeapon
             HUD.Instance.ShowWindow(GameObject.FindGameObjectWithTag("UpgradeWindow"));
         }
     }
+    */
 
 
     private void YouDied()
