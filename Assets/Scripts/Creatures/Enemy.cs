@@ -8,22 +8,15 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField]
     Animator animator;
-
     private NavMeshAgent _navMeshAgent;
-
     public Transform target;
-
-    [SerializeField]
-    private GameObject medkit;
-
     [SerializeField]
     private Weapon weapon;
     [SerializeField]
     private GameObject enemyWeapon;
     [SerializeField]
     private Transform weaponHolder;
-
-   
+    private Destructable destructable;
 
     [SerializeField]
     float nextShootTime = 1;
@@ -40,9 +33,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         _navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
-        Destructable enemy = GetComponent<Destructable>();
-
-        enemy.OnDeath += EnemyDied;
+        destructable = GetComponent<Destructable>();
         GetWeapon(enemyWeapon);
         
     }
@@ -100,20 +91,8 @@ public class Enemy : MonoBehaviour
                 return;
             }
         }
-
         seeTarget = false;
     }
 
-    private void EnemyDied()
-    {
-        if (UnityEngine.Random.Range(0, 100) < 20)
-        {
-            HealthBonus.Create(transform.position);
-        }        else if (UnityEngine.Random.Range(0, 100) > 80)
-        {
-                Ammo.Create(transform.position);
-        }        MenuAudioController.Instance.PlaySound("tearingflesh", false);
-        HUD.Score += reward;
 
-    }
 }

@@ -5,17 +5,16 @@ using UnityEngine;
 [System.Serializable]
 public class Damager : MonoBehaviour {
 
-    public Destructable target;
-    
+    public IDestructable target;
     public float Damage;
 
 
     private void OnCollisionEnter(Collision collision)
     {
-        target = collision.gameObject.GetComponent<Destructable>();
+        target = collision.gameObject.GetComponent<IDestructable>();
         if (target != null)
         {
-            target.Hit(Damage);
+            target.ReceiveHit(Damage);
             Destroy(gameObject);
         }
         else

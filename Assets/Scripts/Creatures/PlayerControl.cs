@@ -21,12 +21,14 @@ public class PlayerControl: ChooseShootWeapon
     [SerializeField]
     private float _dashDelay;
     
-
+        //        if (gameObject.GetComponent<PlayerControl>() != null)
+        //{
+        //    HUD.Instance.HealthBar.value = currentHealth;
+        //}
     void Awake ()
     {
         _rigidbody = gameObject.GetComponent<Rigidbody>();
         Destructable player = GetComponent<Destructable>();
-        player.OnDeath += YouDied;
     }
 	
 	void Start ()
@@ -134,12 +136,5 @@ public class PlayerControl: ChooseShootWeapon
         {
             HUD.Instance.ShowWindow(GameObject.FindGameObjectWithTag("UpgradeWindow"));
         }
-    }
-
-
-    private void YouDied()
-    {
-        
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

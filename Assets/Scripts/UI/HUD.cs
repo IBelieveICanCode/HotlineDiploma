@@ -197,7 +197,6 @@ public class HUD : MonoBehaviour
 
         _countFinalResult.text = "But you've earned " + score + " scores";
         SetHighScore();
-
     }
 
 

@@ -8,10 +8,10 @@ public class Explosion: MonoBehaviour
 
     void OnParticleCollision(GameObject other)
     {
-        Destructable target = other.GetComponent<Destructable>();
+        IDestructable target = other.GetComponent<IDestructable>();
         if (target != null)
         {
-            target.Hit(damage);
+            target.ReceiveHit(damage);
         }
     }
 
