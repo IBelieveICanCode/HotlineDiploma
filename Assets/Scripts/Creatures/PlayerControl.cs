@@ -3,23 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public delegate void UpdateHeroParametersHandler(HeroUpgrades parameters);
 [RequireComponent(typeof (Rigidbody))]
 public class PlayerControl: ChooseShootWeapon
 {
-    
-    public event UpdateHeroParametersHandler OnUpdateHeroParameters;
 
-    public HeroUpgrades _hero;
     [SerializeField]
     private Transform _dashEffect;
     [SerializeField]
     private Animator _animator;
-
     private Rigidbody _rigidbody;   
     private float _nextDashTime = 0;
     [SerializeField]
     private float _dashDelay;
+    [SerializeField]
+    private float _dashDistance = 5f;
+    [SerializeField]
+    private float _speed = 10f;
     
         //        if (gameObject.GetComponent<PlayerControl>() != null)
         //{
@@ -39,8 +38,6 @@ public class PlayerControl: ChooseShootWeapon
     
     void Update ()
     {
-        //OpenUpgrade();
-        OpenMenu();
         LookAtTarget();
         
         PickUpWeapon();
@@ -70,7 +67,7 @@ public class PlayerControl: ChooseShootWeapon
             if (Time.time > _nextDashTime)
             {
                 Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));              
-                _rigidbody.AddForce(moveInput.normalized * _hero.DashDistance, ForceMode.Impulse);
+                _rigidbody.AddForce(moveInput.normalized * _dashDistance, ForceMode.Impulse);
                 Transform dashTransform = 
                     Instantiate(_dashEffect, 
                     new Vector3(transform.position.x, transform.position.y + transform.localScale.y/3.5f, transform.position.z),
@@ -98,7 +95,7 @@ public class PlayerControl: ChooseShootWeapon
         //GetComponent<Animations>().SetVariables("hSpeed", Input.GetAxisRaw("Horizontal"));
         //GetComponent<Animations>().SetVariables("vSpeed", Input.GetAxis("Vertical"));
         _animator.SetFloat("velocity", moveInput.magnitude);
-        Vector3 moveVelocity = moveInput.normalized * _hero.Speed;
+        Vector3 moveVelocity = moveInput.normalized * _speed;
         _rigidbody.MovePosition(_rigidbody.position + moveVelocity * Time.fixedDeltaTime);
         
     }
@@ -120,21 +117,6 @@ public class PlayerControl: ChooseShootWeapon
             Vector3 position = ray.GetPoint(distance); 
             //position.y = transform.position.y;
             transform.LookAt(position);
-        }
-    }
-
-    private void OpenMenu()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            HUD.Instance.ShowWindow(GameObject.FindGameObjectWithTag("MainMenu"));
-        }
-    }
-    private void OpenUpgrade()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            HUD.Instance.ShowWindow(GameObject.FindGameObjectWithTag("UpgradeWindow"));
         }
     }
 }

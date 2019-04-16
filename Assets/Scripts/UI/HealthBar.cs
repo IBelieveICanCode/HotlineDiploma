@@ -8,21 +8,20 @@ public class HealthBar : MonoBehaviour
     private Image healthBar;
 
     [SerializeField]
-    private Destructable owner;
+    private IDestructable owner;
 
     private bool rotateBar = true;
 
-	// Use this for initialization
 	void Start () {
+        owner = transform.parent.parent.GetComponent<IDestructable>();
         healthBar = gameObject.GetComponent<Image>();
             rotateBar = false;
         
 	}
 	
-	// Update is called once per frame
 	void Update ()
     {
-        healthBar.fillAmount = Mathf.InverseLerp(0.0f, owner.hitPoints, owner.hitPointsCurrent);
+        healthBar.fillAmount = Mathf.InverseLerp(0.0f, owner.MaxHealth, owner.CurrentHealth);
     
         if (rotateBar)
         {

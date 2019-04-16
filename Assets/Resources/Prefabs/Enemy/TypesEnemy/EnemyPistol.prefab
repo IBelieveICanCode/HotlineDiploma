@@ -87,7 +87,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7f9b61efdd5c214cb429b2b10b15a36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  owner: {fileID: 4043101360506735611}
 --- !u!1 &1941592585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,12 +1747,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8124428014638660917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b89b8b93e255ae44b9437c582a025554, type: 3}
+  m_Script: {fileID: 11500000, guid: 30391f367b8504b42ad71b5f4a03ae20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
-  hitPoints: 50
-  hitPointsCurrent: 0
+  maxHealth: 100
+  particleSystem: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f,
+    type: 3}
 --- !u!195 &8124428014638660920
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1804,7 +1803,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8124428014638660922}
   target: {fileID: 5229685867307860115, guid: 36bbf76da61e48e46ba824c04b74bd37, type: 3}
-  medkit: {fileID: 0}
   weapon: {fileID: 0}
   enemyWeapon: {fileID: 2870099300180914392, guid: 8a96a3013cf891b4bbc4bebfab850b5b,
     type: 3}

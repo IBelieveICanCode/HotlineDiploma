@@ -7,5 +7,6 @@ public class EnemyParticleDestructable : ParticleDestructable
     protected override void Die()
     {
         EnemyBonusSpawner.SpawnEnemyBonus(transform.position);
+        base.Die();
     }
 }

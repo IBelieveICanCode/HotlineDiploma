@@ -1446,6 +1446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e252886df4f77d40863944eff94c637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponSprite: {fileID: 0}
   damage: 1
   executionDelay: 0.5
   shootPower: 15
@@ -1615,17 +1616,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bb2d64901cf9e4f9fc836b8b269f02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hero:
-    speed: 10
-    _dashDistance: 60
-  _dashEffect: {fileID: 400000, guid: 805df92cec033ed4f8591ada0f5d7687, type: 3}
-  _animator: {fileID: 5233141917263315154}
   _weaponHolder: {fileID: 5232102440129952338}
-  MyWeapons: []
+  Arsenal: []
   CurrentWeapon: {fileID: 0}
   Pistol: {fileID: 2870099300180914392, guid: 8a96a3013cf891b4bbc4bebfab850b5b, type: 3}
   _grenadeHolder: {fileID: 5232102440890606372}
+  _dashEffect: {fileID: 400000, guid: 805df92cec033ed4f8591ada0f5d7687, type: 3}
+  _animator: {fileID: 5233141917263315154}
   _dashDelay: 0
+  _dashDistance: 5
+  _speed: 10
 --- !u!114 &5233141917263315157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1635,12 +1635,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5233141917263315159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b89b8b93e255ae44b9437c582a025554, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c88c6bf3c0d3420eb55fc5872f29bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
-  hitPoints: 100
-  hitPointsCurrent: 0
+  maxHealth: 100
+  particleSystem: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f,
+    type: 3}
 --- !u!136 &5233141917263315158
 CapsuleCollider:
   m_ObjectHideFlags: 0

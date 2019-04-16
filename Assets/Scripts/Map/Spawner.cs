@@ -7,19 +7,17 @@
     [Header("Types of Enemies")]
     [SerializeField]
     private Enemy[] typesOfEnemies; // types of enemies in general
-    private List<Enemy> enemies; // from this list enemies will spawn
-    
-
 
     public Wave[] waves;
-        
+    Wave currentWave;
+    private int currentWaveNumber;
+    public int CurrentWaveNumber { get => currentWaveNumber; set => currentWaveNumber = value; }
 
     [SerializeField]
-    Destructable playerEntity;
-    Transform playerT;
-
-    Wave currentWave;
-    public int currentWaveNumber;
+    ILogicDeathDependable playerEntity;
+    [SerializeField]
+    IVisible playerPos;
+    private Vector3 playerT;
 
     int enemiesRemainingToSpawn;
     int enemiesRemainingAlive;
@@ -34,24 +32,20 @@
     bool isCamping;
 
     bool isDisabled;
-    
-
-    public int CurrentWaveNumber { get => currentWaveNumber; set => currentWaveNumber = value; }
 
     public event System.Action<int> OnNewWave;
 
     void Start()
     {
-            playerT = playerEntity.transform;
+        playerPos = FindObjectOfType<PlayerParticleDestructable>().GetComponent<IVisible>();
+        playerEntity = FindObjectOfType<PlayerParticleDestructable>().GetComponent<ILogicDeathDependable>();
+        playerT = playerPos.GetCurrentPositon();
+        nextCampCheckTime = timeBetweenCampingChecks + Time.time;
+        campPositionOld = playerT;
+        playerEntity.DeathEvent += OnPlayerDeath;
 
-            nextCampCheckTime = timeBetweenCampingChecks + Time.time;
-            campPositionOld = playerT.position;
-            playerEntity.OnDeath += OnPlayerDeath;
-
-            map = FindObjectOfType<MapGenerator>();
+        map = FindObjectOfType<MapGenerator>();
         StartCoroutine(NextWave(true));
-            //NextWave();
-            //FillEnemyStack();
     }
 
     void Update()
@@ -62,8 +56,8 @@
             {
                 nextCampCheckTime = Time.time + timeBetweenCampingChecks;
 
-                isCamping = (Vector3.Distance(playerT.position, campPositionOld) < campThresholdDistance);
-                campPositionOld = playerT.position;
+                isCamping = (Vector3.Distance(playerT, campPositionOld) < campThresholdDistance);
+                campPositionOld = playerT;
             }
             if (currentWave != null)
                 if ((enemiesRemainingToSpawn > 0 || currentWave.infinite) && Time.time > nextSpawnTime)
@@ -83,7 +77,7 @@
         Transform spawnTile = map.GetRandomOpenTile();
         if (isCamping)
         {
-            spawnTile = map.GetTileFromPosition(playerT.position);
+            spawnTile = map.GetTileFromPosition(playerT);
         }
         Material tileMat = spawnTile.GetComponent<Renderer>().material;
         Color initialColour = tileMat.color;
@@ -101,7 +95,7 @@
 
         Enemy newEnemy = Instantiate(typesOfEnemies[Random.Range(0, typesOfEnemies.Length)], spawnTile.position + Vector3.up, Quaternion.identity);
         newEnemy.target = GameObject.FindGameObjectWithTag("Player").transform;
-        newEnemy.GetComponent<Destructable>().OnDeath += OnEnemyDeath;
+        newEnemy.GetComponent<ILogicDeathDependable>().DeathEvent += OnEnemyDeath;
     }
 
     void OnPlayerDeath()
@@ -124,7 +118,7 @@
 
     void ResetPlayerPosition()
         {
-            playerT.position = map.GetTileFromPosition(Vector3.zero).position;
+            playerPos.SetPosition(map.GetTileFromPosition(Vector3.zero).position);
         }
 
     //void NextWave()

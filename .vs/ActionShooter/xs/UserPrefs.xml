@@ -1,20 +1,17 @@
 ﻿<Properties StartupConfiguration="{A7F29C90-3196-2FBB-1DEC-84B2110AA31D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/HUD.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Map/MenuAudioController.cs">
     <Files>
-      <File FileName="Assets/Scripts/UI/HUD.cs" Line="94" Column="1" />
-      <File FileName="Assets/Scripts/Destructable/ParticleDestructable.cs" Line="13" Column="20" />
-      <File FileName="Assets/Scripts/Destructable/Destructable.cs" Line="10" Column="14" />
-      <File FileName="Assets/Scripts/Destructable/IDestructable.cs" Line="3" Column="27" />
-      <File FileName="Assets/Scripts/Destructable/EnemyParticleDestructable.cs" Line="9" Column="63" />
-      <File FileName="Assets/Scripts/Destructable/ObstacleDestructabel.cs" Line="12" Column="22" />
-      <File FileName="Assets/Scripts/Creatures/Enemy.cs" Line="19" Column="18" />
-      <File FileName="Assets/Scripts/Pickups/EnemyBonusSpawner.cs" Line="32" Column="30" />
-      <File FileName="Assets/Scripts/Creatures/PlayerControl.cs" Line="31" Column="60" />
-      <File FileName="Assets/Scripts/Damager/Damager.cs" Line="6" Column="20" />
-      <File FileName="Assets/Scripts/Explosion.cs" Line="19" Column="1" />
-      <File FileName="Assets/Scripts/Map/Spawner.cs" Line="104" Column="1" />
-      <File FileName="Assets/Scripts/Pickups/HealthBonus.cs" Line="15" Column="95" />
-      <File FileName="Assets/Scripts/UI/UpgradeWindow.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/Map/Spawner.cs" Line="97" Column="10" />
+      <File FileName="Assets/Scripts/Interface/IVisible.cs" Line="5" Column="27" />
+      <File FileName="Assets/Scripts/Destructable/PlayerParticleDestructable.cs" Line="5" Column="48" />
+      <File FileName="Assets/Scripts/Weapons/LaserGun.cs" Line="70" Column="84" />
+      <File FileName="Assets/Scripts/UI/HealthBar.cs" Line="16" Column="71" />
+      <File FileName="Assets/Scripts/Pickups/EnemyBonusSpawner.cs" Line="18" Column="20" />
+      <File FileName="Assets/Scripts/Pickups/HealthBonus.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/UI/HUD.cs" Line="108" Column="26" />
+      <File FileName="Assets/Scripts/Map/MenuAudioController.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/Destructable/Destructable.cs" Line="41" Column="70" />
+      <File FileName="Assets/Scripts/Map/MapGenerator.cs" Line="244" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,11 +23,12 @@
                 <Node name="Damager" expanded="True" />
                 <Node name="Destructable" expanded="True" />
                 <Node name="Interface" expanded="True" />
-                <Node name="Map" expanded="True" />
-                <Node name="Pickups" expanded="True" />
-                <Node name="UI" expanded="True">
-                  <Node name="HUD.cs" selected="True" />
+                <Node name="Map" expanded="True">
+                  <Node name="MenuAudioController.cs" selected="True" />
                 </Node>
+                <Node name="Pickups" expanded="True" />
+                <Node name="UI" expanded="True" />
+                <Node name="Weapons" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -47,9 +45,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="abac69fc-65d7-4bbd-a9a4-a8999bc9b921" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/igor/Documents/GitHub/ActionShooter/Assets/Scripts/Creatures/PlayerControl.cs" relfile="Assets/Scripts/Creatures/PlayerControl.cs" line="21" column="13" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5815889793336775782}
-  - component: {fileID: 5815889793336775783}
+  - component: {fileID: 6807020918773035115}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5815889793336775783
+--- !u!114 &6807020918773035115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,11 +44,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typesOfEnemies:
-  - {fileID: 3159075275144370232, guid: 31aea71b44c57a243ad8c15ddc36577c, type: 3}
+  - {fileID: 1369202613185361539, guid: 9c05adce9e3953b44a29a828333e45d5, type: 3}
+  - {fileID: 8124428014638660918, guid: ad4ac96790f2f51499bb943a65378d58, type: 3}
+  - {fileID: 8124428014638660918, guid: 8917fc2a6d5de534a90c1bc2d555e00c, type: 3}
   waves:
-  - enemyCount: 2
-    timeBetweenSpawns: 1
-  - enemyCount: 3
+  - infinite: 0
+    enemyCount: 2
+    timeBetweenSpawns: 3
+  - infinite: 0
+    enemyCount: 3
     timeBetweenSpawns: 2
-  playerEntity: {fileID: 3579717283638294751, guid: 36bbf76da61e48e46ba824c04b74bd37,
-    type: 3}
+  - infinite: 0
+    enemyCount: 4
+    timeBetweenSpawns: 1.5
+  - infinite: 0
+    enemyCount: 6
+    timeBetweenSpawns: 2
+  - infinite: 0
+    enemyCount: 7
+    timeBetweenSpawns: 2
+  - infinite: 0
+    enemyCount: 8
+    timeBetweenSpawns: 2
+  - infinite: 1
+    enemyCount: 10
+    timeBetweenSpawns: 3
+  currentWaveNumber: 0

@@ -11,7 +11,6 @@ public class MenuAudioController : MonoBehaviour
     private AudioSource Music;
     [SerializeField]
     private Slider soundSlider;
-
     [SerializeField]
     private Slider musicSlider;
 
@@ -24,7 +23,8 @@ public class MenuAudioController : MonoBehaviour
             Instance = this;
         }
         else
-            Destroy(this);       
+            Destroy(this);
+        DontDestroyOnLoad(gameObject);     
     }
     private void Start()
     {

@@ -139,12 +139,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1372520140575930052}
-  - component: {fileID: 6603506283302666318}
   - component: {fileID: 1369202613185361549}
   - component: {fileID: 1369202613185361538}
   - component: {fileID: 1369202613185361539}
   - component: {fileID: 1369202613185361548}
   - component: {fileID: 1369202613185361551}
+  - component: {fileID: 1381687360744858354}
   m_Layer: 0
   m_Name: EnemyMachineGun
   m_TagString: Untagged
@@ -171,21 +171,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6603506283302666318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369202613185361536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b89b8b93e255ae44b9437c582a025554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
-  hitPoints: 50
-  hitPointsCurrent: 0
 --- !u!195 &1369202613185361549
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -236,7 +221,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1369202613185361551}
   target: {fileID: 0}
-  medkit: {fileID: 0}
   weapon: {fileID: 0}
   enemyWeapon: {fileID: 3243809242026669359, guid: 78c562e96cc606f4396bc5abf3564367,
     type: 3}
@@ -279,6 +263,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1381687360744858354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369202613185361536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30391f367b8504b42ad71b5f4a03ae20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  particleSystem: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f,
+    type: 3}
 --- !u!1 &1369204661515256474
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,12 +2002,12 @@ PrefabInstance:
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
       propertyPath: m_RaycastTarget
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
       propertyPath: m_Type
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
@@ -2020,11 +2019,26 @@ PrefabInstance:
       propertyPath: m_FillOrigin
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
+        type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1930616887259021594, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
       propertyPath: owner
       value: 
-      objectReference: {fileID: 6603506283302666318}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e78f7406887f5324ab2a8d32d281c1d6, type: 3}
 --- !u!224 &8821733386224853939 stripped

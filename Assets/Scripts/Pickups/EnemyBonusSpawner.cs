@@ -15,11 +15,12 @@ public class EnemyBonusSpawner : MonoBehaviour
             Destroy(gameObject);
     }
     #endregion
+    [SerializeField]
     private List<EnemyBonus> enemyBonusList = new List<EnemyBonus>();
 
-    public static void Create(Vector3 _position, string _path)
+    public static void Create(Vector3 _position, GameObject _bonus)
     {
-        Instantiate(Resources.Load(_path), _position, Quaternion.identity);
+        Instantiate(_bonus, _position, Quaternion.identity);
     }
 
     public static void SpawnEnemyBonus(Vector3 _position)
@@ -29,14 +30,14 @@ public class EnemyBonusSpawner : MonoBehaviour
             return;
             Debug.Log("Empty enemy bonus list");
         }
-        string _resourcesPath = CalculateSpawnProbability();
-        if (!string.IsNullOrEmpty(_resourcesPath))
+        var _bonus = CalculateSpawnProbability();
+        if (_bonus != null)
         {
-            Create(_position, _resourcesPath);
+            Create(_position, _bonus);
         }
     }
 
-    private static string CalculateSpawnProbability()
+    private static GameObject CalculateSpawnProbability()
     {
         //Get random coef
         //shuffle enemy bonus list
@@ -48,10 +49,10 @@ public class EnemyBonusSpawner : MonoBehaviour
         { 
             if(_coef >= (1f - enemyBonus.SpawnProbability))
             {
-                return enemyBonus.ResourcesPath;
+                return enemyBonus.BonusPrefab;
             }
         }
-        return "";
+        return null;
     }
 }
 
@@ -62,8 +63,8 @@ public class EnemyBonus
     public string BonusName;
     public float SpawnProbability = 0.15f;
     public GameObject BonusPrefab;
-    //path to load obj from recources
-    public string ResourcesPath;
+    ////path to load obj from recources
+    //public string ResourcesPath;
 }
 
 public static class ListRandomizer

@@ -30,9 +30,10 @@ public class HUD : MonoBehaviour
     [SerializeField]
     private Slider healthBar;
     [SerializeField]
-    Destructable owner;
+    IDestructable playerHealth;
+    [SerializeField]
+    ILogicDeathDependable playerDeath;
     public GameObject GameOverScreen;
-    public GameObject UpgradeScreen;
 
     private GameState state;
     static private HUD _instance;
@@ -91,25 +92,29 @@ public class HUD : MonoBehaviour
 
     void Start()
     {
-        owner.OnDeath += OnGameOver; 
+        playerHealth = FindObjectOfType<PlayerParticleDestructable>().GetComponent<IDestructable>();
+        playerDeath = FindObjectOfType<PlayerParticleDestructable>().GetComponent<ILogicDeathDependable>();
+        playerDeath.DeathEvent += OnGameOver; 
         SetHealthValue();
         
     }
 
     void Update()
     {
-        SetEnemyReward();
+        SetPoints();
         SetWaveCount();
         SetAmmoCount();
         ShowHighScore();
+        SetHealthValue();
     }
-
+    //TO DO: This metod is called when player take damage
     public void SetHealthValue()
     {      
-        HealthBar.value = owner.hitPointsCurrent;
+        HealthBar.value = playerHealth.CurrentHealth;
+        print("IN HUD " + playerHealth.CurrentHealth);
     }
 
-    public void SetEnemyReward()
+    public void SetPoints()
     {
         _scoreLabel.text = score.ToString();
     }

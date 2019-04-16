@@ -133,11 +133,14 @@
     <Compile Include="Assets\Scripts\Destructable\IDestructable.cs" />
     <Compile Include="Assets\Scripts\Destructable\ObstacleDestructabel.cs" />
     <Compile Include="Assets\Scripts\Destructable\ParticleDestructable.cs" />
+    <Compile Include="Assets\Scripts\Destructable\PlayerParticleDestructable.cs" />
     <Compile Include="Assets\Scripts\EnemyWeapons\EnemyMachineGun.cs" />
     <Compile Include="Assets\Scripts\EnemyWeapons\EnemyShotgun.cs" />
     <Compile Include="Assets\Scripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\Interface\ILaser.cs" />
+    <Compile Include="Assets\Scripts\Interface\ILogicDeathDependable.cs" />
     <Compile Include="Assets\Scripts\Interface\IShooting.cs" />
+    <Compile Include="Assets\Scripts\Interface\IVisible.cs" />
     <Compile Include="Assets\Scripts\Map\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\Map\MenuAudioController.cs" />
     <Compile Include="Assets\Scripts\Map\Settings.cs" />
@@ -146,6 +149,7 @@
     <Compile Include="Assets\Scripts\Map\Utility.cs" />
     <Compile Include="Assets\Scripts\Pickups\EnemyBonusSpawner.cs" />
     <Compile Include="Assets\Scripts\Pickups\HealthBonus.cs" />
+    <Compile Include="Assets\Scripts\UI\CallHUDControl.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
     <Compile Include="Assets\Scripts\UI\HUD.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />

@@ -17,8 +17,4 @@ public class HealthBonus : MonoBehaviour
         }
     }
 
-    public static void Create(Vector3 position)
-    {
-        Instantiate(Resources.Load("Prefabs/HealthPivot"), position, Quaternion.identity);
-    }
 }

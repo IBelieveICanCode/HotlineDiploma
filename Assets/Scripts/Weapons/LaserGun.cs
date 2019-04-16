@@ -44,12 +44,12 @@ public class LaserGun : Weapon, ILaserable
             RaycastHit[] hits = Physics.BoxCastAll(center, boxCastSize/2, muzzle.forward, muzzle.rotation);
             if (hits != null)
             {
-                foreach (RaycastHit h in hits)
+                foreach (RaycastHit hit in hits)
                 {
-                    Destructable target = h.transform.GetComponent<Destructable>();
+                    IDestructable target = hit.transform.GetComponent<IDestructable>();
                     if (target != null)
                     {
-                        target.Hit(damage);
+                        target.ReceiveHit(damage);
                     }
                 }
             }
@@ -65,12 +65,12 @@ public class LaserGun : Weapon, ILaserable
             RaycastHit[] hits = Physics.BoxCastAll(center, boxCastSize / 2, muzzle.forward, muzzle.rotation);
             if (hits != null)
             {
-                foreach (RaycastHit h in hits)
+                foreach (RaycastHit hit in hits)
                 {
-                    Destructable target = h.transform.GetComponent<Destructable>();
+                    IDestructable target = hit.transform.GetComponent<IDestructable>();
                     if (target != null)
                     {
-                        target.Hit(damage);
+                        target.ReceiveHit(damage);
                     }
                 }
 
