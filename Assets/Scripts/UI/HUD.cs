@@ -9,27 +9,16 @@ using System;
 public enum GameState { Play, Pause };
 public class HUD : MonoBehaviour
 {
-    [Header("List of songs")]
-    [SerializeField]
-    private GameObject _buttonsLayout;
-    [SerializeField]
-    private Button _songButton;
-    //public string SongName;
-    [Space]
+    public HighScoreHUD HighScoreScript;
+    public ChooseSongHUD ChooseSongScript;
     public Image FadePlane;
     public Image TypeWeapon;
     [SerializeField]
     private Text _waveCount;
-    [SerializeField]
-    private Text _scoreLabel;
-    [SerializeField]
-    private Text _countFinalResult;
-    [SerializeField]
-    private Text _highScoreCount;
+    public Text _scoreLabel;
     [SerializeField]
     private Text _ammoCount;
-    [SerializeField]
-    private Text _songName;
+    
 
     private static float score;
     private static float currentWave;
@@ -41,7 +30,6 @@ public class HUD : MonoBehaviour
     public GameObject GameOverScreen;
     public GameObject MainMenu;
     //public GameObject UpgradeScreen;
-    public GameObject ChooseSongScreen;
 
     private GameState state;
     static private HUD _instance;
@@ -100,10 +88,10 @@ public class HUD : MonoBehaviour
 
     void Start()
     {
-        ShowWindow(ChooseSongScreen);
+        ShowWindow(ChooseSongScript.ChooseSongScreen);
         owner.OnDeath += OnGameOver; 
         SetHealthValue();
-        CreateButtonsForSongs();
+        ChooseSongScript.CreateButtonsForSongs();
     }
 
     void Update()
@@ -111,7 +99,7 @@ public class HUD : MonoBehaviour
         SetEnemyReward();
         SetWaveCount();
         SetAmmoCount();
-        ShowHighScore();
+        HighScoreScript.ShowHighScore();
     }
 
     public void SetHealthValue()
@@ -178,22 +166,6 @@ public class HUD : MonoBehaviour
         //gameOverScreen.SetActive(true);
     }
 
-    public void SetHighScore()
-    {
-        
-        if (PlayerPrefs.GetInt("PlayerBestScore") < int.Parse(_scoreLabel.text))
-        {
-            PlayerPrefs.SetInt("PlayerBestScore", int.Parse(_scoreLabel.text));
-            _highScoreCount.text = "Best Score:" + PlayerPrefs.GetInt("PlayerBestScore").ToString();
-        }
-    }
-
-    public void ShowHighScore()
-    {
-        
-        _highScoreCount.text = "Best Score:" + PlayerPrefs.GetInt("PlayerBestScore").ToString();
-    }
-
     IEnumerator Fade(Color from, Color to, float time)
     {
         float speed = 1 / time;
@@ -207,33 +179,9 @@ public class HUD : MonoBehaviour
         //gameOverScreen.SetActive(true);
         MenuAudioController.Instance.PlaySound("youdied", false);
         ShowWindow(GameOverScreen);
-        _countFinalResult.text = "But you've earned " + score + " scores";
-        SetHighScore();
+        HighScoreScript.CountFinalResult.text = "But you've earned " + score + " scores";
+        HighScoreScript.SetHighScore();
 
     }
-   
-    private void CreateButtonsForSongs()
-    {
-        for (int i = 0; i < MenuAudioController.Instance.ListOfSongs.Count; i++)
-        {
-            //print(MenuAudioController.Instance.ListOfSongs.Count);
-            Button button = Instantiate(_songButton);
-            button.transform.parent = _buttonsLayout.transform;
-            button.GetComponentInChildren<Text>().text = MenuAudioController.Instance.ListOfSongs[i].name;
-            button.onClick.AddListener(() => SongChosen(button.GetComponentInChildren<Text>().text));
-            
-        }
-    }
 
-    public void SongChosen(string text)
-    {
-        SongNameCasette(text);
-        MenuAudioController.Instance.PlayMusic(text);
-        HideWindow(ChooseSongScreen);
-    }
-
-    public void SongNameCasette(string song)
-    {
-        _songName.text = song;
-    }
 }

@@ -144,7 +144,9 @@
     <Compile Include="Assets\Scripts\Map\Utility.cs" />
     <Compile Include="Assets\Scripts\Pickups\Ammo.cs" />
     <Compile Include="Assets\Scripts\Pickups\HealthBonus.cs" />
+    <Compile Include="Assets\Scripts\UI\ChooseSongHUD.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\UI\HighScoreHUD.cs" />
     <Compile Include="Assets\Scripts\UI\HUD.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\UI\UpgradeWindow.cs" />
