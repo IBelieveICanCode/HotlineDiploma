@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7062,7 +7062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.41179463, y: 0, z: 0, w: 0.91127676}
-  m_LocalPosition: {x: -2.0102801, y: 14.588616, z: -12.592371}
+  m_LocalPosition: {x: -1.8306469, y: 14.588616, z: -12.592371}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1457740049}
@@ -17543,7 +17543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyBonusList:
   - BonusName: Medkit
-    SpawnProbability: 20
+    SpawnProbability: 0.2
     BonusPrefab: {fileID: 1781239252308292522, guid: 273f6d4077152a34c83ae25cc8650d25,
       type: 3}
 --- !u!1 &1358855243
@@ -19227,7 +19227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501522524}
   m_LocalRotation: {x: 0.41179463, y: 0, z: 0, w: 0.91127676}
-  m_LocalPosition: {x: -2.0102801, y: 14.588616, z: -12.592371}
+  m_LocalPosition: {x: -1.8306469, y: 14.588616, z: -12.592371}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1833077493}

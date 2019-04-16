@@ -111,7 +111,6 @@ public class HUD : MonoBehaviour
     public void SetHealthValue()
     {      
         HealthBar.value = playerHealth.CurrentHealth;
-        print("IN HUD " + playerHealth.CurrentHealth);
     }
 
     public void SetPoints()

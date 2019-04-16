@@ -37,8 +37,8 @@ public abstract class Destructable : MonoBehaviour,IDestructable,ILogicDeathDepe
 
     void IDestructable.ReceiveHit(float damage)
     {
-        if (gameObject.tag == "Player")
-            print("In destructabel current health " + currentHealth);
+        //if (gameObject.tag == "Player")
+            //print("In destructabel current health " + currentHealth);
         currentHealth -= damage;
         if (currentHealth <= 0)
         {

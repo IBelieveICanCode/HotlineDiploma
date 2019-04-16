@@ -2,8 +2,8 @@
     using System.Collections;
     using System.Collections.Generic;
 
-    public class Spawner : MonoBehaviour
-        {
+public class Spawner : MonoBehaviour
+{
     [Header("Types of Enemies")]
     [SerializeField]
     private Enemy[] typesOfEnemies; // types of enemies in general
@@ -37,7 +37,7 @@
 
     void Start()
     {
-        playerPos = FindObjectOfType<PlayerParticleDestructable>().GetComponent<IVisible>();
+        playerPos =FindObjectOfType<PlayerParticleDestructable>().GetComponent<IVisible>();
         playerEntity = FindObjectOfType<PlayerParticleDestructable>().GetComponent<ILogicDeathDependable>();
         playerT = playerPos.GetCurrentPositon();
         nextCampCheckTime = timeBetweenCampingChecks + Time.time;
@@ -45,7 +45,7 @@
         playerEntity.DeathEvent += OnPlayerDeath;
 
         map = FindObjectOfType<MapGenerator>();
-        StartCoroutine(NextWave(true));
+        SpawnNextWave();
     }
 
     void Update()
@@ -86,9 +86,7 @@
 
         while (spawnTimer < spawnDelay)
         {
-
             tileMat.color = Color.Lerp(initialColour, flashColour, Mathf.PingPong(spawnTimer * tileFlashSpeed, 1));
-
             spawnTimer += Time.deltaTime;
             yield return null;
         }
@@ -109,10 +107,7 @@
 
         if (enemiesRemainingAlive == 0)
         {
-        StartCoroutine(NextWave(false));
-            //NextWave();
-
-        //FillEnemyStack();
+             StartCoroutine(NextWave());
         }
     }
 
@@ -122,29 +117,27 @@
         }
 
     //void NextWave()
-    IEnumerator NextWave(bool firstSpawn)
+    IEnumerator NextWave()
         {
-        if (firstSpawn)
-            yield return null;
-        else
             yield return new WaitForSeconds(3f);
-            CurrentWaveNumber++;
-            
-            HUD.CurrentWave = CurrentWaveNumber;
-            if (CurrentWaveNumber - 1 < waves.Length)
-            {
-                currentWave = waves[CurrentWaveNumber - 1];
-
-                enemiesRemainingToSpawn = currentWave.enemyCount;
-                enemiesRemainingAlive = enemiesRemainingToSpawn;
-
+            SpawnNextWave();
+        }
+    void SpawnNextWave()
+    {
+        CurrentWaveNumber++;
+        HUD.CurrentWave = CurrentWaveNumber;
+        if (CurrentWaveNumber - 1 < waves.Length)
+        {
+            currentWave = waves[CurrentWaveNumber - 1];
+            enemiesRemainingToSpawn = currentWave.enemyCount;
+            enemiesRemainingAlive = enemiesRemainingToSpawn;
             if (OnNewWave != null)
             {
                 OnNewWave(CurrentWaveNumber);
             }
             ResetPlayerPosition();
-            }
         }
+    }
 
     /*
     void FillEnemyStack()
@@ -164,8 +157,6 @@
             public bool infinite;
             public int enemyCount;
             public float timeBetweenSpawns;
-
-        
         }
 
     }

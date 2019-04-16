@@ -44,6 +44,7 @@ public class EnemyBonusSpawner : MonoBehaviour
         //compare probability
         //If can spawn something return what to spawn if 
         float _coef = Random.Range(0f, 1f);
+        print(_coef);
         ListRandomizer.Shuffle(Instance.enemyBonusList);
         foreach(var enemyBonus in Instance.enemyBonusList)
         { 
@@ -61,6 +62,8 @@ public class EnemyBonus
 {
     //from 0 - 1
     public string BonusName;
+    [Range(0f
+        ,1f)]
     public float SpawnProbability = 0.15f;
     public GameObject BonusPrefab;
     ////path to load obj from recources
