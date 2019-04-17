@@ -8,6 +8,10 @@ using System;
 public enum GameState { Play, Pause };
 public class HUD : MonoBehaviour
 {
+    [SerializeField]
+    private Slider _soundSlider;
+    [SerializeField]
+    private Slider _musicSlider;
     public Image FadePlane;
     public Image TypeWeapon;
     [SerializeField]
@@ -92,11 +96,26 @@ public class HUD : MonoBehaviour
 
     void Start()
     {
+        SlidersSetup();
         playerHealth = FindObjectOfType<PlayerParticleDestructable>().GetComponent<IDestructable>();
         playerDeath = FindObjectOfType<PlayerParticleDestructable>().GetComponent<ILogicDeathDependable>();
         playerDeath.DeathEvent += OnGameOver; 
         SetHealthValue();
         
+    }
+
+    void SlidersSetup()
+    {
+        _soundSlider.onValueChanged.AddListener(
+            delegate {
+            MenuAudioController.Instance.SFX.volume = _soundSlider.value;
+        });
+        _musicSlider.onValueChanged.AddListener(
+            delegate {
+            MenuAudioController.Instance.Music.volume = _musicSlider.value;
+        });
+        _musicSlider.value = MenuAudioController.Instance.Music.volume;
+        _soundSlider.value = MenuAudioController.Instance.SFX.volume;
     }
 
     void Update()

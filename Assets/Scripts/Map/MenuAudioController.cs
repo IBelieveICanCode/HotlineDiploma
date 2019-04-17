@@ -5,15 +5,10 @@ using UnityEngine.UI;
 
 public class MenuAudioController : MonoBehaviour
 {
-    [SerializeField]
-    private AudioSource SFX;
-    [SerializeField]
-    private AudioSource Music;
-    [SerializeField]
-    private Slider soundSlider;
-    [SerializeField]
-    private Slider musicSlider;
-
+    public AudioSource SFX;
+    public AudioSource Music;
+    public float SfxStartVolume = 1;
+    public float MusicStartVolume = 1;
     public static MenuAudioController Instance;
 
     private void Awake()
@@ -24,26 +19,9 @@ public class MenuAudioController : MonoBehaviour
         }
         else
             Destroy(this);
-        DontDestroyOnLoad(gameObject);     
-    }
-    private void Start()
-    {
-        soundSlider.value = FindObjectOfType<Settings>().SFX;
-        musicSlider.value = FindObjectOfType<Settings>().Music;
-        SFX.volume = soundSlider.value;
-        Music.volume = musicSlider.value;
-
-    }
-
-    public void SetSoundVolume(Slider slider)
-    {
-        FindObjectOfType<Settings>().SFX = slider.value;
-        SFX.volume = soundSlider.value;
-    }
-    public void SetMusicVolume(Slider slider)
-    {
-        FindObjectOfType<Settings>().Music = slider.value;
-        Music.volume = musicSlider.value;
+        DontDestroyOnLoad(gameObject);
+        SFX.volume = SfxStartVolume;
+        Music.volume = SfxStartVolume;
     }
 
     public void PlaySound(string clipName,bool randomPitch)
@@ -59,7 +37,6 @@ public class MenuAudioController : MonoBehaviour
 
     public void StopMusic()
     {
-        Music.Stop();
-           
+        Music.Stop();           
     }
 }
