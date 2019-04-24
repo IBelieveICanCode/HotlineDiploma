@@ -39,4 +39,9 @@ public class MenuAudioController : MonoBehaviour
     {
         Music.Stop();           
     }
+
+    public void PlayMusic()
+    {
+        Music.Play();
+    }
 }

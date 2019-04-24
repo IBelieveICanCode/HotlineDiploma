@@ -11,7 +11,7 @@ public abstract class Destructable : MonoBehaviour,IDestructable,ILogicDeathDepe
     protected float currentHealth;
     float IDestructable.CurrentHealth { get { return currentHealth; } set { currentHealth = value; } }
     float IDestructable.MaxHealth { get { return maxHealth;} }
-    private OnDeathHandler deathEvent;
+    protected OnDeathHandler deathEvent;
 
     event OnDeathHandler ILogicDeathDependable.DeathEvent
     {
@@ -23,16 +23,20 @@ public abstract class Destructable : MonoBehaviour,IDestructable,ILogicDeathDepe
         Init();
      }
 
-    private void Init()
+    protected virtual void Init()
     {
         currentHealth = maxHealth;
     }
 
-    protected virtual void Die()
+    protected void Die()
     {
         if (deathEvent != null)
+        {
             deathEvent();
-        Destroy(gameObject);
+            deathEvent = null;
+            Destroy(gameObject);
+        }
+       
     }
 
     void IDestructable.ReceiveHit(float damage)

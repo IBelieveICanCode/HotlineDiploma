@@ -7,10 +7,10 @@ public abstract class ParticleDestructable : Destructable
     [SerializeField]
     protected GameObject particleSystem;
 
-    protected override void Die()
+    protected override void Init()
     {
-        SpawnParticle();
-        base.Die();
+        base.Init();
+        deathEvent += SpawnParticle;
     }
 
     protected virtual void SpawnParticle()

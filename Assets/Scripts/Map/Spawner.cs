@@ -37,7 +37,7 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-        playerPos =FindObjectOfType<PlayerParticleDestructable>().GetComponent<IVisible>();
+        playerPos = FindObjectOfType<PlayerParticleDestructable>().GetComponent<IVisible>();
         playerEntity = FindObjectOfType<PlayerParticleDestructable>().GetComponent<ILogicDeathDependable>();
         playerT = playerPos.GetCurrentPositon();
         nextCampCheckTime = timeBetweenCampingChecks + Time.time;
