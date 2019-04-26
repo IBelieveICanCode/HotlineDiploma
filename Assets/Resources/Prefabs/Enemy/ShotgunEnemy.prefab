@@ -100,7 +100,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5800185005908586798}
   - component: {fileID: 6628205517929188614}
-  - component: {fileID: 5800185005908586799}
   m_Layer: 0
   m_Name: ShotgunEnemy
   m_TagString: Untagged
@@ -138,37 +137,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 937ed1d68dd572c45851a5da81f96924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponSprite: {fileID: 0}
   damage: 5
   executionDelay: 0.8
   shootPower: 17
+  infiniteAmmo: 0
   maxAmmo: 7
   ammo: 0
-  bulletPrefab: {fileID: 1296554858146116, guid: 1a65d1ab5f03a774384616af6510ba34,
+  bulletPrefab: {fileID: 7979813564151409481, guid: 99ef35352972bf24cb977df2a021d3ac,
     type: 3}
   muzzle: {fileID: 5800185005859671259}
   range: 0.403
-  shellAmount: 9
---- !u!114 &5800185005908586799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5800185005908586797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3c16529812b3d744bf974594653b1e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  executionDelay: 0.7
-  shootPower: 17
-  maxAmmo: 7
-  ammo: 0
-  bulletPrefab: {fileID: 1296554858146116, guid: 1a65d1ab5f03a774384616af6510ba34,
-    type: 3}
-  muzzle: {fileID: 5800185005859671259}
-  range: 0.4
   shellAmount: 9
 --- !u!1 &5800185006137600236
 GameObject:

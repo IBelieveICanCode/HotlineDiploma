@@ -11,6 +11,6 @@ public class GrenadeLauncher : Weapon
         GameObject newBullet = Instantiate(bulletPrefab, muzzle.position, muzzle.rotation);
         newBullet.GetComponent<Rigidbody>().AddForce(muzzle.forward * shootPower);
         //newBullet.GetComponent<Damager>().Damage = damage;
-        Destroy(newBullet, 1.5f);
+        Destroy(newBullet, 1.5f); //TODO timer for bullets
     }
 }

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class RocketLauncher : Weapon
 {
-    public ParticleSystem explosion;
-
     public override void Use()
     {
         base.Use();

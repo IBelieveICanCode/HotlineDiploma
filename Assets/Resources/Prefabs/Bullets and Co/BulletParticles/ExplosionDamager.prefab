@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f883a8e1ad0ee1b4c876ed577fafa8ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
+  damage: 40
 --- !u!198 &198835626466106942
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4877,10 +4877,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4598623204722564}
     m_Modifications:
-    - target: {fileID: 1090021747712178, guid: 6059bb7df74a0c94c9de83f0558244ff, type: 3}
-      propertyPath: m_Name
-      value: ExplosionCloud
-      objectReference: {fileID: 0}
     - target: {fileID: 4598623204722564, guid: 6059bb7df74a0c94c9de83f0558244ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4924,6 +4920,10 @@ PrefabInstance:
     - target: {fileID: 4598623204722564, guid: 6059bb7df74a0c94c9de83f0558244ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090021747712178, guid: 6059bb7df74a0c94c9de83f0558244ff, type: 3}
+      propertyPath: m_Name
+      value: ExplosionCloud
       objectReference: {fileID: 0}
     - target: {fileID: 198835626466106942, guid: 6059bb7df74a0c94c9de83f0558244ff,
         type: 3}

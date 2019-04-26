@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30391f367b8504b42ad71b5f4a03ae20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 50
   particleSystem: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f,
     type: 3}
 --- !u!1 &1369204661515256474
@@ -1859,11 +1859,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372520140575930052}
     m_Modifications:
-    - target: {fileID: 1930635426190118477, guid: e78f7406887f5324ab2a8d32d281c1d6,
-        type: 3}
-      propertyPath: m_Name
-      value: healthBar
-      objectReference: {fileID: 0}
     - target: {fileID: 1860744725995094395, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1983,6 +1978,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930635426190118477, guid: e78f7406887f5324ab2a8d32d281c1d6,
+        type: 3}
+      propertyPath: m_Name
+      value: healthBar
       objectReference: {fileID: 0}
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}

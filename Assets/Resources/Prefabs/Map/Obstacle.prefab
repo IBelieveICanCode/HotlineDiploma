@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 5420682620987253052}
   - component: {fileID: 3165055759066658358}
   - component: {fileID: 7786515432752075822}
-  - component: {fileID: 4694052672023181960}
-  - component: {fileID: 6519231920268228473}
+  - component: {fileID: 5656675347633367594}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -110,7 +109,7 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!114 &4694052672023181960
+--- !u!114 &5656675347633367594
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,22 +118,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8922097865274468409}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b89b8b93e255ae44b9437c582a025554, type: 3}
+  m_Script: {fileID: 11500000, guid: b207de04c01b4466794bbece4e08963a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blood: {fileID: 0}
-  hitPoints: 300
-  hitPointsCurrent: 0
---- !u!114 &6519231920268228473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8922097865274468409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 511692186accd7c40968f9bb20a0e2e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rubbles: {fileID: 198266128080250516, guid: 7dce964a3b8a7d34e9a283aa07e1bf3e, type: 3}
+  maxHealth: 150
+  particleSystem: {fileID: 1217946600799730, guid: 7dce964a3b8a7d34e9a283aa07e1bf3e,
+    type: 3}

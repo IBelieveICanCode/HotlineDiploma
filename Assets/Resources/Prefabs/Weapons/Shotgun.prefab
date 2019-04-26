@@ -84,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5800185005859671258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.07285774, z: 1.105}
+  m_LocalPosition: {x: 0, y: 0.082, z: 0.903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5800185005908586798}
@@ -141,9 +141,10 @@ MonoBehaviour:
   damage: 5
   executionDelay: 0.7
   shootPower: 17
+  infiniteAmmo: 0
   maxAmmo: 7
   ammo: 7
-  bulletPrefab: {fileID: 1296554858146116, guid: 1a65d1ab5f03a774384616af6510ba34,
+  bulletPrefab: {fileID: 7979813564151409481, guid: 99ef35352972bf24cb977df2a021d3ac,
     type: 3}
   muzzle: {fileID: 5800185005859671259}
   range: 0.4
