@@ -44,7 +44,7 @@ public class EnemyBonusSpawner : MonoBehaviour
         //compare probability
         //If can spawn something return what to spawn if 
         float _coef = Random.Range(0f, 1f);
-        print(_coef);
+        //print(_coef);
         ListRandomizer.Shuffle(Instance.enemyBonusList);
         foreach(var enemyBonus in Instance.enemyBonusList)
         { 

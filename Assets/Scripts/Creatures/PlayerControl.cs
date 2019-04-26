@@ -52,8 +52,6 @@ public class PlayerControl: ChooseShootWeapon
     {
         if (Input.GetKey(KeyCode.Mouse0))   
             UseWeapon();      
-        if (Input.GetKeyUp(KeyCode.G))
-            UseGrenade();
         if (Input.GetAxis("Mouse ScrollWheel") != 0)
             ChooseWeapon(Input.GetAxis("Mouse ScrollWheel"));
 

@@ -13,10 +13,6 @@ public class Spawner : MonoBehaviour
     private int currentWaveNumber;
     public int CurrentWaveNumber { get => currentWaveNumber; set => currentWaveNumber = value; }
 
-    [SerializeField]
-    ILogicDeathDependable playerEntity;
-    [SerializeField]
-    IVisible playerPos;
     private Vector3 playerT;
 
     int enemiesRemainingToSpawn;
@@ -37,12 +33,10 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-        playerPos = FindObjectOfType<PlayerParticleDestructable>().GetComponent<IVisible>();
-        playerEntity = FindObjectOfType<PlayerParticleDestructable>().GetComponent<ILogicDeathDependable>();
-        playerT = playerPos.GetCurrentPositon();
+        playerT = GameController.Instance.playerPos.GetCurrentPositon();
         nextCampCheckTime = timeBetweenCampingChecks + Time.time;
         campPositionOld = playerT;
-        playerEntity.DeathEvent += OnPlayerDeath;
+        GameController.Instance.playerEntity.DeathEvent += OnPlayerDeath;
 
         map = FindObjectOfType<MapGenerator>();
         SpawnNextWave();
@@ -57,7 +51,7 @@ public class Spawner : MonoBehaviour
                 nextCampCheckTime = Time.time + timeBetweenCampingChecks;
 
                 isCamping = (Vector3.Distance(playerT, campPositionOld) < campThresholdDistance);
-                campPositionOld = playerT;
+                campPositionOld = GameController.Instance.playerPos.GetCurrentPositon();
             }
             if (currentWave != null)
                 if ((enemiesRemainingToSpawn > 0 || currentWave.infinite) && Time.time > nextSpawnTime)
@@ -92,7 +86,6 @@ public class Spawner : MonoBehaviour
         }
 
         Enemy newEnemy = Instantiate(typesOfEnemies[Random.Range(0, typesOfEnemies.Length)], spawnTile.position + Vector3.up, Quaternion.identity);
-        newEnemy.target = GameObject.FindGameObjectWithTag("Player").transform;
         newEnemy.GetComponent<ILogicDeathDependable>().DeathEvent += OnEnemyDeath;
     }
 
@@ -104,16 +97,16 @@ public class Spawner : MonoBehaviour
     void OnEnemyDeath()
     {
         enemiesRemainingAlive--;
-
         if (enemiesRemainingAlive == 0)
         {
+           
              StartCoroutine(NextWave());
         }
     }
 
     void ResetPlayerPosition()
         {
-            playerPos.SetPosition(map.GetTileFromPosition(Vector3.zero).position);
+        GameController.Instance.playerPos.SetPosition(map.GetTileFromPosition(Vector3.zero).position);
         }
 
     //void NextWave()

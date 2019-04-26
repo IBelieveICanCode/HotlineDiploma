@@ -130,6 +130,7 @@
     <Compile Include="Assets\Scripts\Creatures\HeroUpgrades.cs" />
     <Compile Include="Assets\Scripts\Creatures\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Damager\Damager.cs" />
+    <Compile Include="Assets\Scripts\Damager\Projectiles.cs" />
     <Compile Include="Assets\Scripts\Destructable\Destructable.cs" />
     <Compile Include="Assets\Scripts\Destructable\EnemyParticleDestructable.cs" />
     <Compile Include="Assets\Scripts\Destructable\IDestructable.cs" />
@@ -139,9 +140,11 @@
     <Compile Include="Assets\Scripts\EnemyWeapons\EnemyMachineGun.cs" />
     <Compile Include="Assets\Scripts\EnemyWeapons\EnemyShotgun.cs" />
     <Compile Include="Assets\Scripts\Explosion.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Interface\ILaser.cs" />
     <Compile Include="Assets\Scripts\Interface\ILogicDeathDependable.cs" />
     <Compile Include="Assets\Scripts\Interface\IShooting.cs" />
+    <Compile Include="Assets\Scripts\Interface\ITrailEffectable.cs" />
     <Compile Include="Assets\Scripts\Interface\IVisible.cs" />
     <Compile Include="Assets\Scripts\Map\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\Map\MenuAudioController.cs" />
@@ -158,7 +161,6 @@
     <Compile Include="Assets\Scripts\Weapons\Bullet\Bullet.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bullet\Rocket.cs" />
     <Compile Include="Assets\Scripts\Weapons\GrenadeDamager.cs" />
-    <Compile Include="Assets\Scripts\Weapons\GrenadeHolder.cs" />
     <Compile Include="Assets\Scripts\Weapons\GrenadeLauncher.cs" />
     <Compile Include="Assets\Scripts\Weapons\LaserGun.cs" />
     <Compile Include="Assets\Scripts\Weapons\MachineGun.cs" />

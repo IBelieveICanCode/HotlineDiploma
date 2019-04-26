@@ -1403,57 +1403,6 @@ Transform:
   m_Father: {fileID: 5229685867307860115}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5232102440890606374
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5232102440890606373}
-  - component: {fileID: 5232102440890606372}
-  m_Layer: 0
-  m_Name: GrenadeHolder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5232102440890606373
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5232102440890606374}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.081, y: 0.216, z: 0.1096}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5229685867307860115}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5232102440890606372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5232102440890606374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e252886df4f77d40863944eff94c637, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WeaponSprite: {fileID: 0}
-  damage: 1
-  executionDelay: 0.5
-  shootPower: 15
-  maxAmmo: 0
-  ammo: 3
-  bulletPrefab: {fileID: 100008, guid: a4b44abdbd241fa4faf6f507cff9873c, type: 3}
-  muzzle: {fileID: 5232102440890606373}
 --- !u!1 &5233115878443077239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,7 +1533,6 @@ Transform:
   - {fileID: 5227690257434375897}
   - {fileID: 5227989406972058951}
   - {fileID: 5232102440129952338}
-  - {fileID: 5232102440890606373}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1620,7 +1568,6 @@ MonoBehaviour:
   Arsenal: []
   CurrentWeapon: {fileID: 0}
   Pistol: {fileID: 2870099300180914392, guid: 8a96a3013cf891b4bbc4bebfab850b5b, type: 3}
-  _grenadeHolder: {fileID: 5232102440890606372}
   _dashEffect: {fileID: 400000, guid: 805df92cec033ed4f8591ada0f5d7687, type: 3}
   _animator: {fileID: 5233141917263315154}
   _dashDelay: 0

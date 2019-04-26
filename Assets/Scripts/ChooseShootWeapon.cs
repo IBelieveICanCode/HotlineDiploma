@@ -11,10 +11,6 @@ public class ChooseShootWeapon : MonoBehaviour
     public List<GameObject> Arsenal = new List<GameObject>();
     public Weapon CurrentWeapon;
     public GameObject Pistol;
-
-    [SerializeField]
-    protected Weapon _grenadeHolder;
-
     protected float _nextShootTime = 0;
 
     protected void UseWeapon()
@@ -24,11 +20,6 @@ public class ChooseShootWeapon : MonoBehaviour
                 CurrentWeapon.Use();
                 _nextShootTime = Time.time + CurrentWeapon.executionDelay;
             }    
-    }
-
-    protected void UseGrenade()
-    {
-        _grenadeHolder.Use();
     }
 
     protected void PickUpWeapon()

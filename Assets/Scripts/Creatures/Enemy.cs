@@ -24,18 +24,12 @@ public class Enemy : MonoBehaviour
 
     private bool seeTarget = true;
 
-
-    private void Awake()
-    {
-        
-    }
-
     void Start()
     {
+        target = FindObjectOfType<PlayerParticleDestructable>().transform;
         _navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
         destructable = GetComponent<Destructable>();
-        GetWeapon(enemyWeapon);
-        
+        GetWeapon(enemyWeapon);        
     }
     
     private void GetWeapon(GameObject newWeapon)
@@ -49,7 +43,6 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
-
         //target = GameObject.FindGameObjectWithTag("Player").transform;
         if (target != null)
         {
@@ -67,11 +60,8 @@ public class Enemy : MonoBehaviour
     {
         if (seeTarget == true && Time.time > nextShootTime)
         {
-            
             weapon.Use();
-
-            nextShootTime = Time.time + weapon.executionDelay;
-            
+            nextShootTime = Time.time + weapon.executionDelay;            
         }
     }
 

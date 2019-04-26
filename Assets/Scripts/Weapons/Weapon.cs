@@ -12,7 +12,8 @@ public abstract class Weapon: MonoBehaviour
     public float executionDelay;
     [SerializeField]
     protected float shootPower;
-    
+
+    public bool infiniteAmmo;
     public int maxAmmo;
     public int ammo;
     [SerializeField]
@@ -24,9 +25,7 @@ public abstract class Weapon: MonoBehaviour
 
     protected void outOfAmmo()
     {
-        
-        ammo--;
-       
+        ammo--;  
         if (ammo <= 0)
         {
             FindObjectOfType<PlayerControl>().RemoveWeaponFromArsenal(gameObject);
@@ -35,6 +34,7 @@ public abstract class Weapon: MonoBehaviour
 
     //public abstract void Hide();
     public virtual void Use() {
-        outOfAmmo();
+        if (!infiniteAmmo)
+            outOfAmmo();
     }
 }

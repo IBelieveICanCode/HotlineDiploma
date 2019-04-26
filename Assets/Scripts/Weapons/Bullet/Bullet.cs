@@ -9,7 +9,6 @@ public class Bullet : MonoBehaviour
 
     private void OnDestroy()
     {
-        Destroy(Instantiate<Object>(explosion, transform.position, Quaternion.identity), 0.5f);
-        
+        GameObject bulletSpark = Instantiate(explosion, transform.position, Quaternion.identity);       
     }
 }

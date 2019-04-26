@@ -54,7 +54,7 @@ public class LaserGun : Weapon, ILaserable
                 }
             }
             DrawLaser(line, muzzle.forward * boxCastSize.z + muzzle.transform.position);
-            t += 0.02f;
+            t += 0.02f; //TODO: Implement controllable laser effect time 
             yield return new WaitForSeconds(0.02f);
         }
         t = 0;

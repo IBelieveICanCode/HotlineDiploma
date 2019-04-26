@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Damager : MonoBehaviour {
+public abstract class Damager : MonoBehaviour {
 
     public IDestructable target;
     public float Damage;
 
 
-    private void OnCollisionEnter(Collision collision)
+    protected virtual void OnCollisionEnter(Collision collision)
     {
         target = collision.gameObject.GetComponent<IDestructable>();
         if (target != null)
@@ -20,24 +20,6 @@ public class Damager : MonoBehaviour {
         else
         {
             Destroy(gameObject);
-        }
-
-        TrailEffectDie();
-    }
-
-    /*otected virtual void DieEffect()
-    { 
-        Destroy(gameObject);
-    }
-    */
-    void TrailEffectDie()
-    {
-        ParticleSystem trail = gameObject.GetComponentInChildren<ParticleSystem>();
-        if (trail != null)
-        {
-            Destroy(trail.gameObject, trail.startLifetime);
-            trail.Stop();
-            trail.transform.SetParent(null);
         }
     }
 }

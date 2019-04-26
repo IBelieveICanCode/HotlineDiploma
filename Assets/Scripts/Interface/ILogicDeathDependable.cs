@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public delegate void OnDeathHandler();
-interface ILogicDeathDependable
+public interface ILogicDeathDependable
 {
     event OnDeathHandler DeathEvent;
 }
