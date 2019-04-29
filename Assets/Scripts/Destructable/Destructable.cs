@@ -6,6 +6,10 @@ using UnityEngine.Events;
 
 public abstract class Destructable : MonoBehaviour,IDestructable,ILogicDeathDependable
 {
+    [HideInInspector]
+    public bool isRewarded;
+    [HideInInspector]
+    public List<Reward> rewards = new List<Reward>();
     [SerializeField]
     protected float maxHealth = 100f;
     protected float currentHealth;
@@ -26,6 +30,13 @@ public abstract class Destructable : MonoBehaviour,IDestructable,ILogicDeathDepe
     protected virtual void Init()
     {
         currentHealth = maxHealth;
+        if (isRewarded)
+            deathEvent += GiveReward;
+    }
+
+    private void GiveReward()
+    {
+        
     }
 
     protected void Die()

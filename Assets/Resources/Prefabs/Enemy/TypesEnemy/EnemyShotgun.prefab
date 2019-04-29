@@ -1842,6 +1842,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30391f367b8504b42ad71b5f4a03ae20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRewarded: 0
+  rewards: []
   maxHealth: 50
   particleSystem: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f,
     type: 3}

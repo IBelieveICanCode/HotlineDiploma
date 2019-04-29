@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 118
+  controlID: 114
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 119
+  controlID: 115
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 120
+  controlID: 116
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -267,8 +267,8 @@ MonoBehaviour:
     y: 0
     width: 560
     height: 971
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -387,16 +387,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 7b36f240ffcc3fb4a9547d153b79070f
   m_Gizmos: 1
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 304.48837, y: -1.8645144, z: 227.6183}
+    m_Target: {x: 0, y: 3, z: 0}
     speed: 2
-    m_Value: {x: 304.48837, y: -1.8645144, z: 227.6183}
+    m_Value: {x: -2.230066, y: 1.0799999, z: -5.784452}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -425,13 +425,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.20049354, y: -0.6611947, z: 0.19005534, w: 0.69749767}
+    m_Target: {x: -0.42440936, y: 0.0005406315, z: -0.00025341214, w: -0.90546995}
     speed: 2
-    m_Value: {x: 0.20049354, y: -0.6611947, z: 0.19005534, w: 0.69749767}
+    m_Value: {x: 0.28466034, y: 0.4681638, z: -0.16240647, w: 0.82061887}
   m_Size:
-    m_Target: 11.68406
+    m_Target: 9.416961
     speed: 2
-    m_Value: 11.68406
+    m_Value: 4.311775
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -638,9 +638,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a6a40100
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9e37f4ff
+      m_ExpandedIDs: 8cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -702,20 +702,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Interface
+    - Assets/Resources/Prefabs/Enemy/TypesEnemy
   m_ViewMode: 1
   m_StartGridSize: 74
   m_LastFolders:
-  - Assets/Scripts/Interface
+  - Assets/Resources/Prefabs/Enemy/TypesEnemy
   m_LastFoldersGridSize: 74
   m_LastProjectPath: C:\Users\Sergey\RepositoryForMyGames\HotlineDiploma
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1303}
-    m_SelectedIDs: c6a80000
-    m_LastClickedID: 43206
-    m_ExpandedIDs: 0000000040a800005ca800008ca80000c6a8000014a9000078a9000004aa00000aaa000026aa0000a0aa0000c0aa0000caaa000000ab000010ab000024ab000030ab00005cab00008eab0000f4ab000042ac000068ac000070ac00007aad0000e4b90000e6b90000e8b90000eab90000ecb90000eeb90000f0b90000f2b90000f4b90000f6b90000f8b9000000ca9a3b
+    scrollPos: {x: 0, y: 319}
+    m_SelectedIDs: 18350000
+    m_LastClickedID: 13592
+    m_ExpandedIDs: 000000001a2e0000482e0000942e0000f02e0000483100005031000092310000c432000076330000ec330000fe3300001e3400004a340000c83400001a350000b035000060360000c6360000ee360000ec380000583b00005a3b00005c3b00005e3b0000603b0000623b0000643b0000663b0000683b00006a3b00006c3b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -743,7 +743,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: a4dfffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000040a800005ca800008ca80000c6a8000004aa00000aaa000026aa0000a0aa0000c0aa000000ab000010ab000024ab000030ab00005cab00008eab0000f4ab000042ac000068ac000070ac00007aad0000e4b90000e6b90000e8b90000eab90000ecb90000eeb90000f0b90000f2b90000f4b90000f6b90000f8b90000
+    m_ExpandedIDs: 000000001a2e0000482e0000942e0000f02e0000483100005031000092310000c432000076330000ec330000fe3300001e3400004a340000c83400001a350000b035000060360000c6360000ee360000ec380000583b00005a3b00005c3b00005e3b0000603b0000623b0000643b0000663b0000683b00006a3b00006c3b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
