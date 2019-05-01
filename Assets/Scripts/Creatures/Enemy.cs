@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
 
     [SerializeField]
     float nextShootTime = 1;
-    public float reward; //TODO: Rewardable
+//TODO: Rewardable
 
     private bool seeTarget = true;
 

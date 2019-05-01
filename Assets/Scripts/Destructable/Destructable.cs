@@ -6,10 +6,11 @@ using UnityEngine.Events;
 
 public abstract class Destructable : MonoBehaviour,IDestructable,ILogicDeathDependable
 {
-    [HideInInspector]
-    public bool isRewarded;
-    [HideInInspector]
-    public List<Reward> rewards = new List<Reward>();
+    //[HideInInspector]
+    //public bool isRewarded;
+    //[HideInInspector]
+    //public List<Reward> rewards = new List<Reward>();
+    public bool devMode = false;
     [SerializeField]
     protected float maxHealth = 100f;
     protected float currentHealth;
@@ -30,15 +31,16 @@ public abstract class Destructable : MonoBehaviour,IDestructable,ILogicDeathDepe
     protected virtual void Init()
     {
         currentHealth = maxHealth;
-        if (isRewarded)
-            deathEvent += GiveReward;
+        //if (isRewarded)
+            //deathEvent += GiveReward;
     }
 
+    /*
     private void GiveReward()
     {
         
     }
-
+    */
     protected void Die()
     {
         if (deathEvent != null)
@@ -52,12 +54,15 @@ public abstract class Destructable : MonoBehaviour,IDestructable,ILogicDeathDepe
 
     void IDestructable.ReceiveHit(float damage)
     {
-        //if (gameObject.tag == "Player")
-            //print("In destructabel current health " + currentHealth);
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+        if (!devMode)
         {
-            Die();
+            //if (gameObject.tag == "Player")
+            //print("In destructabel current health " + currentHealth);
+            currentHealth -= damage;
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
         }
     }
 }
