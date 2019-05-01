@@ -5,20 +5,21 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class ObstacleDestructabel : ParticleDestructable
 {
-    private Material obstacleMaterial;
+    private Renderer obstacleRenderer;
 
-    protected void Awake()
+    protected override void Init()
     {
-        base.Awake();
-        obstacleMaterial = GetComponent<MeshRenderer>().material;
+        base.Init();
+        obstacleRenderer = GetComponent<Renderer>();
     }
 
     protected override void SpawnParticle()
     {
-        //TODO: Fix destructable color + size
+        //TODO: Fix size
         GameObject _obstacleParticles = Instantiate(particleSystem.gameObject, new Vector3(transform.position.x, transform.position.y + transform.localScale.y / 2, transform.position.z), Quaternion.identity) as GameObject;
-        Color color = new Color(obstacleMaterial.color.r, obstacleMaterial.color.g, obstacleMaterial.color.b, 1f);
-        _obstacleParticles.GetComponent<ParticleSystem>().startColor = color;
+        Color color = new Color(obstacleRenderer.material.color.r, obstacleRenderer.material.color.g, obstacleRenderer.material.color.b, 1f);
+        var main = _obstacleParticles.GetComponent<ParticleSystem>().main;
+        main.startColor = color;
         _obstacleParticles.GetComponent<ParticleSystem>().Play();
         MenuAudioController.Instance.PlaySound("rubble", false);
         float _duration =  _obstacleParticles.GetComponent<ParticleSystem>().main.duration;

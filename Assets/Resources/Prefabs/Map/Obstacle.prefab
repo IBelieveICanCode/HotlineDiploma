@@ -104,7 +104,7 @@ NavMeshObstacle:
   serializedVersion: 3
   m_Shape: 1
   m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
+  m_MoveThreshold: 0
   m_Carve: 1
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b207de04c01b4466794bbece4e08963a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  devMode: 0
   maxHealth: 150
   particleSystem: {fileID: 1217946600799730, guid: 7dce964a3b8a7d34e9a283aa07e1bf3e,
     type: 3}
