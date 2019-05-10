@@ -4,7 +4,9 @@ using System.Collections.Generic;
 
 public class MapGenerator : MonoBehaviour
 {
-
+    [SerializeField]
+    private Transform border;
+    
     public Map[] maps;
     public int mapIndex;
 
@@ -17,7 +19,6 @@ public class MapGenerator : MonoBehaviour
 
     [Range(0, 1)]
     public float outlinePercent;
-
     public float tileSize;
     List<Coord> allTileCoords;
     Queue<Coord> shuffledTileCoords;
@@ -44,7 +45,6 @@ public class MapGenerator : MonoBehaviour
         tileMap = new Transform[currentMap.mapSize.x, currentMap.mapSize.y];
         currentMap.seed = Random.Range(0, int.MaxValue);
         System.Random prng = new System.Random(currentMap.seed);
-        GetComponent<BoxCollider>().size = new Vector3(currentMap.mapSize.x * tileSize, 5f, currentMap.mapSize.y * tileSize);
 
         // Generating coords
         allTileCoords = new List<Coord>();
@@ -66,6 +66,29 @@ public class MapGenerator : MonoBehaviour
 
         Transform mapHolder = new GameObject(holderName).transform;
         mapHolder.parent = transform;
+
+        float _thickness = 0.5f;
+        Vector2 _mapBorders = new Vector2(currentMap.mapSize.x * tileSize, currentMap.mapSize.y * tileSize);
+
+        Vector3 _bPos = new Vector3(currentMap.mapSize.x * tileSize / 2 + _thickness / 2, 0f, 0f);
+        Transform b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+        b.localScale = new Vector3(_thickness, 5f, _mapBorders.y);
+        b.parent = mapHolder;
+
+        _bPos = new Vector3(-currentMap.mapSize.x * tileSize / 2 - _thickness / 2, 0f, 0f);
+        b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+        b.localScale = new Vector3(_thickness, 5f, _mapBorders.y);
+        b.parent = mapHolder;
+
+        _bPos = new Vector3(0f, 0f, currentMap.mapSize.y * tileSize / 2 + _thickness / 2);
+        b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+        b.localScale = new Vector3(_mapBorders.x, 5f, _thickness);
+        b.parent = mapHolder;
+
+        _bPos = new Vector3(0f, 0f, -currentMap.mapSize.y * tileSize / 2 - _thickness / 2);
+        b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+        b.localScale = new Vector3(_mapBorders.x, 5f, _thickness);
+        b.parent = mapHolder;
 
         // Spawning tiles
         for (int x = 0; x < currentMap.mapSize.x; x++)
@@ -234,15 +257,6 @@ public class MapGenerator : MonoBehaviour
 
     }
 
-    private void OnTriggerExit(Collider collision)
-    {
-        Rigidbody target = collision.gameObject.GetComponent<Rigidbody>();
-        Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        if (target != null)
-            target.AddForce(-moveInput.normalized * 200, ForceMode.Impulse);
-
-        target.AddForce(target.velocity * 200, ForceMode.Impulse);
-    }
     
     [System.Serializable]
     public class Map

@@ -38,8 +38,7 @@ public class PlayerControl: ChooseShootWeapon
     
     void Update ()
     {
-        LookAtTarget();
-        
+        LookAtTarget();      
         PickUpWeapon();
         //ChooseWeapon();
         ControlCharacter();
@@ -63,16 +62,15 @@ public class PlayerControl: ChooseShootWeapon
         if (Input.GetKeyUp(KeyCode.Space))
         {
             if (Time.time > _nextDashTime)
-            {
-                Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));              
-                _rigidbody.AddForce(moveInput.normalized * _dashDistance, ForceMode.Impulse);
-                Transform dashTransform = 
-                    Instantiate(_dashEffect, 
-                    new Vector3(transform.position.x, transform.position.y + transform.localScale.y/3.5f, transform.position.z),
-                    Quaternion.Euler(0, moveInput.x * 90, 0));
-                MenuAudioController.Instance.PlaySound("whoosh", true);
-                //_rigidbody.mass = 1f;
+            {           
+                _rigidbody.AddForce(transform.forward * _dashDistance*1000, ForceMode.Force);
                 _nextDashTime = Time.time + _dashDelay;
+                //TODO: Add particle system on player, change particle effect while dash
+                //Transform dashTransform = 
+                //    Instantiate(_dashEffect, 
+                //    new Vector3(transform.position.x, transform.position.y + transform.localScale.y/3.5f, transform.position.z),
+                //    Quaternion.Euler(0, transform.forward.x, 0));
+                MenuAudioController.Instance.PlaySound("whoosh", true);
             }
             return true;
         } return false;
@@ -90,12 +88,9 @@ public class PlayerControl: ChooseShootWeapon
     private void ApplyMovingForce()
     {
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        //GetComponent<Animations>().SetVariables("hSpeed", Input.GetAxisRaw("Horizontal"));
-        //GetComponent<Animations>().SetVariables("vSpeed", Input.GetAxis("Vertical"));
         _animator.SetFloat("velocity", moveInput.magnitude);
         Vector3 moveVelocity = moveInput.normalized * _speed;
-        _rigidbody.MovePosition(_rigidbody.position + moveVelocity * Time.fixedDeltaTime);
-        
+        _rigidbody.velocity = moveVelocity;
     }
 
 

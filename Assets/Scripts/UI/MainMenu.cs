@@ -30,13 +30,15 @@ public class MainMenu : MonoBehaviour
 
     public void ShowWindow(GameObject window)
     {
-        window.GetComponent<Animator>().SetBool("Opened", true);
+        //window.GetComponent<Animator>().SetBool("Opened", true);
+        window.SetActive(true);
         //HUD.Instance.State = GameState.Pause;
     }
 
     public void HideWindow(GameObject window)
     {
-        window.GetComponent<Animator>().SetBool("Opened", false);
+        //window.GetComponent<Animator>().SetBool("Opened", false);
+        window.SetActive(false);
         //HUD.Instance.State = GameState.Play;
     }
 

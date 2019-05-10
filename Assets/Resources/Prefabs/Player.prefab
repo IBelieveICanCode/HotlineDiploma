@@ -1511,6 +1511,7 @@ GameObject:
   - component: {fileID: 5233141917263315158}
   - component: {fileID: 5233141917263315153}
   - component: {fileID: 5233141917263315154}
+  - component: {fileID: 2143435958287082825}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1550,7 +1551,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 0
   m_CollisionDetection: 1
 --- !u!114 &5233141917263315156
 MonoBehaviour:
@@ -1585,6 +1586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c88c6bf3c0d3420eb55fc5872f29bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  devMode: 0
   maxHealth: 100
   particleSystem: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f,
     type: 3}
@@ -1597,7 +1599,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 5233141917263315159}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.14
   m_Height: 0.5
   m_Direction: 1
@@ -1638,6 +1640,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &2143435958287082825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5233141917263315159}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2661778, y: 0.3989634, z: 0.21524864}
+  m_Center: {x: 0.00066547096, y: 0.20415592, z: -0.0044596195}
 --- !u!1 &5233143459324490957
 GameObject:
   m_ObjectHideFlags: 0
