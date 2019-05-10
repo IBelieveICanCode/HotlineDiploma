@@ -9,15 +9,14 @@ using System;
 public enum GameState { Play, Pause };
 public class HUD : MonoBehaviour
 {
+    public WeaponAmmoHUD WeaponAmmoScript;
     public HighScoreHUD HighScoreScript;
     public ChooseSongHUD ChooseSongScript;
+
     public Image FadePlane;
-    public Image TypeWeapon;
     [SerializeField]
     private Text _waveCount;
     public Text _scoreLabel;
-    [SerializeField]
-    private Text _ammoCount;
     
 
     private static float score;
@@ -98,7 +97,7 @@ public class HUD : MonoBehaviour
     {
         SetEnemyReward();
         SetWaveCount();
-        SetAmmoCount();
+        WeaponAmmoScript.SetAmmoCount(ammo);
         HighScoreScript.ShowHighScore();
     }
 
@@ -116,15 +115,6 @@ public class HUD : MonoBehaviour
     public void SetWaveCount()
     {
         _waveCount.text = "Wave: " + currentWave;
-    }
-
-    public void SetAmmoCount()
-    {
-        _ammoCount.text = ammo.ToString();
-    }
-    public void ChangeWeaponImage(Sprite weapon)
-    {
-        TypeWeapon.sprite = weapon;
     }
 
     public void RestartLevel()

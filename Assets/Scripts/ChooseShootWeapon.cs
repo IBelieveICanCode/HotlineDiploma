@@ -67,7 +67,7 @@ public class ChooseShootWeapon : MonoBehaviour
         }
         Arsenal[n].SetActive(true);
         CurrentWeapon = Arsenal[n].GetComponent<Weapon>();
-        HUD.Instance.ChangeWeaponImage(Arsenal[n].GetComponent<Weapon>().WeaponSprite);
+        HUD.Instance.WeaponAmmoScript.ChangeWeaponImage(Arsenal[n].GetComponent<Weapon>().WeaponSprite);
     }
 
 
@@ -92,7 +92,7 @@ public class ChooseShootWeapon : MonoBehaviour
         Arsenal.Add(defaultWeapon);
         defaultWeapon.transform.parent = _weaponHolder;
         CurrentWeapon = defaultWeapon.GetComponent<Weapon>();
-        HUD.Instance.ChangeWeaponImage(defaultWeapon.GetComponent<Weapon>().WeaponSprite);
+        HUD.Instance.WeaponAmmoScript.ChangeWeaponImage(defaultWeapon.GetComponent<Weapon>().WeaponSprite);
     }
 
     public void GetPistol()

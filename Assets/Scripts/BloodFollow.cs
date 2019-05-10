@@ -6,30 +6,24 @@ using UnityEngine;
 [RequireComponent(typeof(ParticleSystem))]
 public class BloodFollow : MonoBehaviour
 {
-    public Transform target;
-
-    [SerializeField]
-    float speed = 10;
-    int num_particles;
+    private Transform target;
+    int num_activeParticles;
 
     ParticleSystem allParticles;
-    ParticleSystem.Particle[] bloodParticles = new ParticleSystem.Particle[1000];
+    ParticleSystem.Particle[] bloodParticles;
     private void Start()
     {
         allParticles = GetComponent<ParticleSystem>();
-        
-        
+        Setup();
     }
 
     private void LateUpdate()
     {
-        num_particles = allParticles.GetParticles(bloodParticles, allParticles.particleCount);
-        GatherBlood();
+        num_activeParticles = allParticles.GetParticles(bloodParticles);
+        StartCoroutine(Timer());
         
 
     }
-
- 
 
     private void OnParticleCollision(GameObject player)
     {
@@ -40,14 +34,27 @@ public class BloodFollow : MonoBehaviour
         }
     }
 
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(1);
+        GatherBlood();
+    }
+
     private void GatherBlood()
     {
-        
-        for (int i = 0; i < num_particles; i++)
+        for (int i = 0; i < num_activeParticles; i++)
         {
-            bloodParticles[i].position = Vector3.MoveTowards(bloodParticles[i].position, target.position, speed * Time.deltaTime);
-            
+            target = FindObjectOfType<PlayerControl>().transform;
+            bloodParticles[i].velocity = Vector3.zero;
+            //bloodParticles[i].velocity = target.position;
+            bloodParticles[i].position = Vector3.Lerp(bloodParticles[i].position, target.position, 0.01f);
         }
-        //allParticles.SetParticles(bloodParticles, num_particles);
+       allParticles.SetParticles(bloodParticles, num_activeParticles);
+    }
+
+    private void Setup()
+    {
+        bloodParticles = new ParticleSystem.Particle[allParticles.maxParticles];
+
     }
 }
