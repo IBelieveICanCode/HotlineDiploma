@@ -92,6 +92,7 @@ public class Spawner : MonoBehaviour
     void OnPlayerDeath()
     {
         isDisabled = true;
+
     }
 
     void OnEnemyDeath()

@@ -38,13 +38,13 @@ public class PlayerControl: ChooseShootWeapon
     
     void Update ()
     {
-        LookAtTarget();      
-        PickUpWeapon();
-        //ChooseWeapon();
-        ControlCharacter();
-        
-        HUD.Ammo = CurrentWeapon.ammo;
-        
+        if (GameController.Instance.State == GameState.Play)
+        {
+            LookAtTarget();
+            PickUpWeapon();
+            ControlCharacter();
+            HUD.Ammo = CurrentWeapon.ammo;
+        }
     }
 
     private void ControlCharacter()
@@ -80,6 +80,7 @@ public class PlayerControl: ChooseShootWeapon
 
     void FixedUpdate()
     {
+        print("Inside fixedupdate");
         if (!Dash())
             ApplyMovingForce();
       
@@ -111,5 +112,6 @@ public class PlayerControl: ChooseShootWeapon
             //position.y = transform.position.y;
             transform.LookAt(position);
         }
+        print("Inside look at target");
     }
 }

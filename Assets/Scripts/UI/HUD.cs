@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
-public enum GameState { Play, Pause };
 public class HUD : MonoBehaviour
 {
     [SerializeField]
@@ -39,30 +38,7 @@ public class HUD : MonoBehaviour
     ILogicDeathDependable playerDeath;
     public GameObject GameOverScreen;
 
-    private GameState state;
-    static private HUD _instance;
-
-
-    public GameState State
-    {
-        get
-        {
-            return state;
-        }
-
-        set
-        {
-            if (value == GameState.Play)
-            {
-                Time.timeScale = 1.0f;
-            }
-            else if (value == GameState.Pause)
-            {
-                Time.timeScale = 0.0f;
-            }
-            state = value;
-        }
-    }
+    private static HUD _instance;
     public static HUD Instance
     {
         get
@@ -140,7 +116,7 @@ public class HUD : MonoBehaviour
 
     public void SetWaveCount()
     {
-        _waveCount.text = "Wave: " + currentWave;
+        _waveCount.text = currentWave.ToString();
     }
 
     public void SetAmmoCount()
@@ -155,39 +131,24 @@ public class HUD : MonoBehaviour
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
-        State = GameState.Play;
+        GameController.Instance.State = GameState.Play;
         Score = 0;
-    }
-
-    public void ShowWindow(GameObject window)
-    {
-        window.GetComponent<Animator>().SetBool("Opened", true);
-        //window.alpha = 1f;
-        //window.blocksRaycasts = true;
-        //window.interactable = true;
-        State = GameState.Pause;
-    }
-    public void HideWindow(GameObject window)
-    {
-        window.GetComponent<Animator>().SetBool("Opened", false);
-        //window.alpha = 0f;
-        //window.blocksRaycasts = false;
-        //window.interactable = false;
-        State = GameState.Play;
     }
 
     public void Quit()
     {
+        GameController.Instance.State = GameState.Play;
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
+    //Call when played die
     private void OnGameOver()
     {
+        //GameController.Instance.State = GameState.Pause;
         MenuAudioController.Instance.StopMusic();
         StartCoroutine(Fade(Color.clear, Color.black, 2f));
-        
-        //gameOverScreen.SetActive(true);
     }
+
     public void SetHighScore()
     {
         
@@ -216,8 +177,10 @@ public class HUD : MonoBehaviour
         }
         //gameOverScreen.SetActive(true);
         MenuAudioController.Instance.PlaySound("youdied", false);
-        ShowWindow(GameOverScreen);
 
+        //TODO: ADD EVENT
+        //ShowWindow(GameOverScreen);
+        GameOverScreen.SetActive(true);
         _countFinalResult.text = "But you've earned " + score + " scores";
         SetHighScore();
     }
