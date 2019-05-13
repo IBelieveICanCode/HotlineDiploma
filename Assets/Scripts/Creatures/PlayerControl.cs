@@ -80,7 +80,6 @@ public class PlayerControl: ChooseShootWeapon
 
     void FixedUpdate()
     {
-        print("Inside fixedupdate");
         if (!Dash())
             ApplyMovingForce();
       
@@ -112,6 +111,5 @@ public class PlayerControl: ChooseShootWeapon
             //position.y = transform.position.y;
             transform.LookAt(position);
         }
-        print("Inside look at target");
     }
 }

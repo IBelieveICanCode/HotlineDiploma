@@ -8,6 +8,9 @@ using System;
 public class HUD : MonoBehaviour
 {
     [SerializeField]
+    private ChooseSongHUD ChooseSongHUD;
+
+    [SerializeField]
     private Slider _soundSlider;
     [SerializeField]
     private Slider _musicSlider;
@@ -77,7 +80,7 @@ public class HUD : MonoBehaviour
         playerDeath = FindObjectOfType<PlayerParticleDestructable>().GetComponent<ILogicDeathDependable>();
         playerDeath.DeathEvent += OnGameOver; 
         SetHealthValue();
-        
+        ChooseSongHUD.ChooseSongScreen.SetActive(true);
     }
 
     void SlidersSetup()

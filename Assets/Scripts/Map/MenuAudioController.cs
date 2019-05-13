@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class MenuAudioController : MonoBehaviour
 {
+    public List<AudioClip> ListOfSongs = new List<AudioClip>();
+
     public AudioSource SFX;
     public AudioSource Music;
     public float SfxStartVolume = 1;
@@ -40,8 +42,12 @@ public class MenuAudioController : MonoBehaviour
         Music.Stop();           
     }
 
-    public void PlayMusic()
+    public void PlayMusic(string songName)
     {
+        string path = "Audio/Sounds/Music/";
+        print(Music.clip);
+        Music.clip = (Resources.Load<AudioClip>(path + songName));
+        print(Music.clip);
         Music.Play();
     }
 }

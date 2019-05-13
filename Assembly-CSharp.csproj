@@ -154,6 +154,7 @@
     <Compile Include="Assets\Scripts\Pickups\HealthBonus.cs" />
     <Compile Include="Assets\Scripts\Pickups\Reward.cs" />
     <Compile Include="Assets\Scripts\UI\CallHUDControl.cs" />
+    <Compile Include="Assets\Scripts\UI\ChooseSongHUD.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
     <Compile Include="Assets\Scripts\UI\HUD.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
