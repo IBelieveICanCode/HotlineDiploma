@@ -158,7 +158,7 @@ public class HUD : MonoBehaviour
         if (PlayerPrefs.GetInt("PlayerBestScore") < int.Parse(_scoreLabel.text))
         {
             PlayerPrefs.SetInt("PlayerBestScore", int.Parse(_scoreLabel.text));
-            _highScoreCount.text = "Best Score:" + PlayerPrefs.GetInt("PlayerBestScore").ToString();
+            _highScoreCount.text = "Best Score:  " + PlayerPrefs.GetInt("PlayerBestScore").ToString();
         }
     }
 

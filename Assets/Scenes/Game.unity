@@ -11159,7 +11159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &352670673
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11177,8 +11177,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -132.026, y: 56.130005}
-  m_SizeDelta: {x: 263.952, y: 112.15}
+  m_AnchoredPosition: {x: -119.24997, y: 72.25}
+  m_SizeDelta: {x: 238.5, y: 144.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &352670674
 Animator:
@@ -11221,7 +11221,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 6cc98cf2c270b3c4fa0418438945d27c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -42543,6 +42543,10 @@ MonoBehaviour:
     SpawnProbability: 0.2
     BonusPrefab: {fileID: 1781239252308292522, guid: 273f6d4077152a34c83ae25cc8650d25,
       type: 3}
+  - BonusName: Ammo
+    SpawnProbability: 0.2
+    BonusPrefab: {fileID: 4815127185479345528, guid: 113eec798598d0a4abf503378640bf31,
+      type: 3}
 --- !u!1 &1357872055
 GameObject:
   m_ObjectHideFlags: 0
@@ -64729,7 +64733,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lily Arciniega - Overdrive
+  m_Text: '---'
 --- !u!222 &2135904784
 CanvasRenderer:
   m_ObjectHideFlags: 0

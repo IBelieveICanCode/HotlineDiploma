@@ -16,7 +16,6 @@ public class ChooseSongHUD : MonoBehaviour
 
     private void Start()
     {
-        
         CreateButtonsForSongs();
         GameController.Instance.State = GameState.Pause;
     }

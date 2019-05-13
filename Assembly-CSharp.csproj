@@ -150,6 +150,7 @@
     <Compile Include="Assets\Scripts\Map\Spawner.cs" />
     <Compile Include="Assets\Scripts\Map\SpawnWeapon.cs" />
     <Compile Include="Assets\Scripts\Map\Utility.cs" />
+    <Compile Include="Assets\Scripts\Pickups\Ammo.cs" />
     <Compile Include="Assets\Scripts\Pickups\EnemyBonusSpawner.cs" />
     <Compile Include="Assets\Scripts\Pickups\HealthBonus.cs" />
     <Compile Include="Assets\Scripts\Pickups\Reward.cs" />

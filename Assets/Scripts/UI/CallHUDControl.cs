@@ -14,7 +14,7 @@ public class CallHUDControl : MonoBehaviour
     private void Awake()
     {
         HideAllWindows();
-        
+
     }
     private void OpenMenu()
     {

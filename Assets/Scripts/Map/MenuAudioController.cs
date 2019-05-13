@@ -44,10 +44,8 @@ public class MenuAudioController : MonoBehaviour
 
     public void PlayMusic(string songName)
     {
-        string path = "Audio/Sounds/Music/";
-        print(Music.clip);
+        string path = "Audio/Music/";
         Music.clip = (Resources.Load<AudioClip>(path + songName));
-        print(Music.clip);
         Music.Play();
     }
 }
