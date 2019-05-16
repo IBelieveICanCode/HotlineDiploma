@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof (Rigidbody))]
+[RequireComponent(typeof (CharacterController))]
 public class PlayerControl: ChooseShootWeapon
 {
-
+    [SerializeField]
+    private CharacterController characterController;
     [SerializeField]
     private Transform _dashEffect;
     [SerializeField]
     private Animator _animator;
-    private Rigidbody _rigidbody;   
     private float _nextDashTime = 0;
     [SerializeField]
     private float _dashDelay;
@@ -20,20 +20,14 @@ public class PlayerControl: ChooseShootWeapon
     [SerializeField]
     private float _speed = 10f;
     
-        //        if (gameObject.GetComponent<PlayerControl>() != null)
-        //{
-        //    HUD.Instance.HealthBar.value = currentHealth;
-        //}
     void Awake ()
     {
-        _rigidbody = gameObject.GetComponent<Rigidbody>();
         Destructable player = GetComponent<Destructable>();
     }
 	
 	void Start ()
     {
         GetPistol();
-
     }
     
     void Update ()
@@ -63,7 +57,7 @@ public class PlayerControl: ChooseShootWeapon
         {
             if (Time.time > _nextDashTime)
             {           
-                _rigidbody.AddForce(transform.forward * _dashDistance*1000, ForceMode.Force);
+                //_rigidbody.AddForce(transform.forward * _dashDistance*1000, ForceMode.Force);
                 _nextDashTime = Time.time + _dashDelay;
                 //TODO: Add particle system on player, change particle effect while dash
                 //Transform dashTransform = 
@@ -80,7 +74,7 @@ public class PlayerControl: ChooseShootWeapon
 
     void FixedUpdate()
     {
-        if (!Dash())
+        //if (!Dash())
             ApplyMovingForce();
       
     }
@@ -90,7 +84,7 @@ public class PlayerControl: ChooseShootWeapon
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         _animator.SetFloat("velocity", moveInput.magnitude);
         Vector3 moveVelocity = moveInput.normalized * _speed;
-        _rigidbody.velocity = moveVelocity;
+        characterController.Move(moveVelocity * Time.deltaTime); 
     }
 
 
@@ -98,13 +92,8 @@ public class PlayerControl: ChooseShootWeapon
     {
 
         Plane plane = new Plane(Vector3.up, transform.position);
-
-        //RaycastHit hit; 
-
         float distance;
-
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);     
         if (plane.Raycast(ray, out distance))
         {
             Vector3 position = ray.GetPoint(distance); 

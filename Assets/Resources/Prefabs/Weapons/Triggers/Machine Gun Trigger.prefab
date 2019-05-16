@@ -71,8 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b82d31c00f0243bccbc491857ed69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerWeapon: {fileID: 4467281155235506687, guid: c656de207260bf54883c10f990df79db,
-    type: 3}
+  Weapon: {fileID: 3469541642736935131, guid: c656de207260bf54883c10f990df79db, type: 3}
 --- !u!54 &6802068760150356895
 Rigidbody:
   m_ObjectHideFlags: 0

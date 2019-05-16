@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class TriggerWeapon : MonoBehaviour
 {
-    public GameObject triggerWeapon; 
+    public Weapon Weapon; 
 }

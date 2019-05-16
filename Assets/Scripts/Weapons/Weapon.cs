@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum TypeOfWeapon {Pistol, MachineGun, Shotgun, RocketLauncher, GrenadeLauncher, LaserGun}
 [System.Serializable]
 public abstract class Weapon: MonoBehaviour
 {
+    public TypeOfWeapon TypeOfWeapon;
     [Header("Basic Weapon Characteristics")]
     public Sprite WeaponSprite;
     [SerializeField]

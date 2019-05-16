@@ -343,6 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb21b710543966488d6830890945aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TypeOfWeapon: 1
   WeaponSprite: {fileID: 21300000, guid: 6af7378ef26eb014f8db92852058f0ef, type: 3}
   damage: 15
   executionDelay: 0.2

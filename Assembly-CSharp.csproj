@@ -125,7 +125,6 @@
     <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\ShaderEffect_Unsync.cs" />
     <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\ShaderToTexture.cs" />
     <Compile Include="Assets\Scripts\BloodFollow.cs" />
-    <Compile Include="Assets\Scripts\ChooseShootWeapon.cs" />
     <Compile Include="Assets\Scripts\Creatures\Enemy.cs" />
     <Compile Include="Assets\Scripts\Creatures\HeroUpgrades.cs" />
     <Compile Include="Assets\Scripts\Creatures\PlayerControl.cs" />
@@ -162,6 +161,7 @@
     <Compile Include="Assets\Scripts\UI\UpgradeWindow.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bullet\Projectile.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bullet\Rocket.cs" />
+    <Compile Include="Assets\Scripts\Weapons\ChooseShootWeapon.cs" />
     <Compile Include="Assets\Scripts\Weapons\GrenadeDamager.cs" />
     <Compile Include="Assets\Scripts\Weapons\GrenadeLauncher.cs" />
     <Compile Include="Assets\Scripts\Weapons\LaserGun.cs" />

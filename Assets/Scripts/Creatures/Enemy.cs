@@ -58,7 +58,8 @@ public class Enemy : MonoBehaviour
 
     private void Shoot()
     {
-        if (seeTarget == true && Time.time > nextShootTime)
+        //if (seeTarget == true && Time.time > nextShootTime)
+        if (Time.time > nextShootTime)
         {
             weapon.Use();
             nextShootTime = Time.time + weapon.executionDelay;            

@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b82d31c00f0243bccbc491857ed69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerWeapon: {fileID: 156968, guid: 0c71c2e2c11e70244bccb576cda20dd1, type: 3}
+  Weapon: {fileID: 7394896086566456690, guid: 0c71c2e2c11e70244bccb576cda20dd1, type: 3}
 --- !u!54 &617986288590971542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -84,7 +84,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0

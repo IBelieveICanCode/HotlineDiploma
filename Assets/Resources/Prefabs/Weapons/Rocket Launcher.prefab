@@ -144,16 +144,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d20b6dc9ec016044b6b6e4eff9286c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TypeOfWeapon: 3
   WeaponSprite: {fileID: 21300000, guid: 871ae8bcf46046c4b9515d55bb24c482, type: 3}
   damage: 50
   executionDelay: 2
   shootPower: 10
+  infiniteAmmo: 0
   maxAmmo: 5
   ammo: 5
   bulletPrefab: {fileID: 100000, guid: fcc1766e5afd10342b2670b24b98c209, type: 3}
   muzzle: {fileID: 467790}
-  explosion: {fileID: 198835626466106942, guid: da2646b85fb380341a7651ef2d14c627,
-    type: 3}
 --- !u!1 &167786
 GameObject:
   m_ObjectHideFlags: 0

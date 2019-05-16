@@ -78,10 +78,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db35a546f4784c4d91fe028dca5c827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TypeOfWeapon: 5
   WeaponSprite: {fileID: 21300000, guid: 6c9ff9bbc4861f7479930e1f9087e170, type: 3}
   damage: 25
   executionDelay: 1
   shootPower: 0
+  infiniteAmmo: 0
   maxAmmo: 1
   ammo: 1
   bulletPrefab: {fileID: 0}

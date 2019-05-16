@@ -32,8 +32,7 @@ public class MenuAudioController : MonoBehaviour
         if (randomPitch)
             SFX.pitch = Random.Range(0.5f, 1.3f);
         else
-            SFX.pitch = 1f;
-        
+            SFX.pitch = 1f;       
         SFX.PlayOneShot(Resources.Load<AudioClip>(path + clipName));
     }
 
