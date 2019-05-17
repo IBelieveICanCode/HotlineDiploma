@@ -87,7 +87,7 @@ public class ChooseShootWeapon : MonoBehaviour
         }
         Arsenal[n].gameObject.SetActive(true);
         CurrentWeapon = Arsenal[n].GetComponent<Weapon>();
-        HUD.Instance.ChangeWeaponImage(Arsenal[n].GetComponent<Weapon>().WeaponSprite);
+        HUD.Instance.ChangeWeaponImage(Arsenal[n].WeaponSprite);
     }
 
 

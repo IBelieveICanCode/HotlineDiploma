@@ -126,6 +126,7 @@ public class HUD : MonoBehaviour
     {
         _ammoCount.text = ammo.ToString();
     }
+
     public void ChangeWeaponImage(Sprite weapon)
     {
         TypeWeapon.sprite = weapon;
@@ -158,14 +159,14 @@ public class HUD : MonoBehaviour
         if (PlayerPrefs.GetInt("PlayerBestScore") < int.Parse(_scoreLabel.text))
         {
             PlayerPrefs.SetInt("PlayerBestScore", int.Parse(_scoreLabel.text));
-            _highScoreCount.text = "Best Score:  " + PlayerPrefs.GetInt("PlayerBestScore").ToString();
+            _highScoreCount.text = "Best Score: " + PlayerPrefs.GetInt("PlayerBestScore").ToString();
         }
     }
 
     public void ShowHighScore()
     {
         
-        _highScoreCount.text = "Best Score:" + PlayerPrefs.GetInt("PlayerBestScore").ToString();
+        _highScoreCount.text = "Best Score: " + PlayerPrefs.GetInt("PlayerBestScore").ToString();
     }
 
     IEnumerator Fade(Color from, Color to, float time)
