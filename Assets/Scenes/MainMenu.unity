@@ -1076,9 +1076,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0b32a5a0f5e4e179cb98a8bdd4a297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  y: 0.78
-  u: 2.48
-  v: -0.89
 --- !u!114 &1179791540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1091,8 +1088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59700678e0092463cb106a3995cd22a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scanlineIntensity: 100
-  scanlineWidth: 1
 --- !u!1 &1245397534
 GameObject:
   m_ObjectHideFlags: 0

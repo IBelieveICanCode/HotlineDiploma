@@ -10,8 +10,6 @@ public class PlayerControl: ChooseShootWeapon
     private CharacterController characterController;
     [SerializeField]
     private Transform _dashEffect;
-    [SerializeField]
-    private Animator _animator;
     private float _nextDashTime = 0;
     [SerializeField]
     private float _dashDelay;
@@ -82,7 +80,6 @@ public class PlayerControl: ChooseShootWeapon
     private void ApplyMovingForce()
     {
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        _animator.SetFloat("velocity", moveInput.magnitude);
         Vector3 moveVelocity = moveInput.normalized * _speed;
         characterController.Move(moveVelocity * Time.deltaTime); 
     }

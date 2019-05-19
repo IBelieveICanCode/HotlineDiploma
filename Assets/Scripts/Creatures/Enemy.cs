@@ -6,8 +6,6 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField]
-    Animator animator;
     private NavMeshAgent _navMeshAgent;
     public Transform target;
     [SerializeField]
@@ -47,7 +45,6 @@ public class Enemy : MonoBehaviour
         if (target != null)
         {
             _navMeshAgent.SetDestination(target.position);
-            animator.SetFloat("velocity", _navMeshAgent.speed);
             CheckTargetVisibility();
         }
         

@@ -115,15 +115,6 @@
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
-    <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\BWEffect.cs" />
-    <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\DiyEffect__FullOnly.cs" />
-    <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\ShaderEffect_BleedingColors.cs" />
-    <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\ShaderEffect_CorruptedVram.cs" />
-    <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\ShaderEffect_CRT.cs" />
-    <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\ShaderEffect_Scanner.cs" />
-    <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\ShaderEffect_Tint.cs" />
-    <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\ShaderEffect_Unsync.cs" />
-    <Compile Include="Assets\Realistic Glitches Lite\Assets\Scripts\ShaderToTexture.cs" />
     <Compile Include="Assets\Scripts\BloodFollow.cs" />
     <Compile Include="Assets\Scripts\Creatures\Enemy.cs" />
     <Compile Include="Assets\Scripts\Creatures\HeroUpgrades.cs" />
@@ -172,18 +163,8 @@
     <Compile Include="Assets\Scripts\Weapons\TriggerWeapon.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponHolder.cs" />
-    <None Include="Assets\Realistic Glitches Lite\Assets\Shaders\Distortion2D__FullOnly.shader" />
-    <None Include="Assets\Realistic Glitches Lite\Assets\Shaders\Scanlines.shader" />
     <None Include="Assets\Easy Weapons\Readme.txt" />
-    <None Include="Assets\Realistic Glitches Lite\Assets\Shaders\BleedingColors.shader" />
-    <None Include="Assets\Realistic Glitches Lite\Assets\Shaders\Shift.shader" />
     <None Include="Assets\Cinemachine\ReleaseNotes.txt" />
-    <None Include="Assets\Realistic Glitches Lite\Assets\Shaders\VUnsync.shader" />
-    <None Include="Assets\Material\Neon.shader" />
-    <None Include="Assets\Realistic Glitches Lite\Assets\Shaders\Tint.shader" />
-    <None Include="Assets\Realistic Glitches Lite\Assets\Shaders\Distortion.shader" />
-    <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
-    <None Include="Assets\Realistic Glitches Lite\Assets\Shaders\BWDiffuse.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Sergey/RepositoryForMyGames/HotlineDiploma/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
