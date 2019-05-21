@@ -27,17 +27,11 @@ public class MapGenerator : MonoBehaviour
 
     Map currentMap;
 
-    void Awake()
+    protected virtual void Awake()
     {
         GenerateMap();
-        FindObjectOfType<Spawner>().OnNewWave += OnNewWave;
     }
 
-    void OnNewWave(int waveNumber)
-    {
-        mapIndex = waveNumber - 1;
-        GenerateMap();
-    }
 
     public void GenerateMap()
     {
@@ -160,7 +154,7 @@ public class MapGenerator : MonoBehaviour
         maskBottom.localScale = new Vector3(maxMapSize.x, 1, (maxMapSize.y - currentMap.mapSize.y) / 2f) * tileSize;
 
         navmeshFloor.localScale = new Vector3(maxMapSize.x, maxMapSize.y) * tileSize;
-        mapFloor.localScale = new Vector3(currentMap.mapSize.x * tileSize, currentMap.mapSize.y * tileSize);
+        mapFloor.localScale = new Vector3(currentMap.mapSize.x * tileSize, currentMap.mapSize.y * tileSize, 1f);
 
 
         
@@ -232,52 +226,53 @@ public class MapGenerator : MonoBehaviour
         shuffledOpenTileCoords.Enqueue(randomCoord);
         return tileMap[randomCoord.x, randomCoord.y];
     }
+}
 
-    [System.Serializable]
-    public struct Coord
+
+[System.Serializable]
+public struct Coord
+{
+    public int x;
+    public int y;
+
+    public Coord(int _x, int _y)
     {
-        public int x;
-        public int y;
-
-        public Coord(int _x, int _y)
-        {
-            x = _x;
-            y = _y;
-        }
-
-        public static bool operator ==(Coord c1, Coord c2)
-        {
-            return c1.x == c2.x && c1.y == c2.y;
-        }
-
-        public static bool operator !=(Coord c1, Coord c2)
-        {
-            return !(c1 == c2);
-        }
-
+        x = _x;
+        y = _y;
     }
 
-    
-    [System.Serializable]
-    public class Map
+    public static bool operator ==(Coord c1, Coord c2)
     {
-
-        public Coord mapSize;
-        [Range(0, 1)]
-        public float obstaclePercent;
-        public int seed;
-        public float minObstacleHeight;
-        public float maxObstacleHeight;
-        public Color foregroundColour;
-        public Color backgroundColour;
-
-        public Coord mapCentre
-        {
-            get
-            {
-                return new Coord(mapSize.x / 2, mapSize.y / 2);
-            }
-        }
-
+        return c1.x == c2.x && c1.y == c2.y;
     }
+
+    public static bool operator !=(Coord c1, Coord c2)
+    {
+        return !(c1 == c2);
+    }
+
+}
+
+
+[System.Serializable]
+public class Map
+{
+
+    public Coord mapSize;
+    [Range(0, 1)]
+    public float obstaclePercent;
+    public int seed;
+    public float minObstacleHeight;
+    public float maxObstacleHeight;
+    public Color foregroundColour;
+    public Color backgroundColour;
+
+    public Coord mapCentre
+    {
+        get
+        {
+            return new Coord(mapSize.x / 2, mapSize.y / 2);
+        }
+    }
+
 }

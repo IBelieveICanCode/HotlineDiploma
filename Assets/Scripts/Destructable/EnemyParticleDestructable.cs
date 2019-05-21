@@ -19,6 +19,6 @@ public class EnemyParticleDestructable : ParticleDestructable
     }
     private void GivePoints()
     {
-        HUD.Score += RewardPoints;
+        HUDScoresScript.Score += RewardPoints;
     }
 }

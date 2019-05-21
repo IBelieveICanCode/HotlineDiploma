@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 9174459285769821747}
   - component: {fileID: 2110699723118186234}
   - component: {fileID: 7713755545936489876}
+  - component: {fileID: 2204634486537010599}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -76,15 +77,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bb2d64901cf9e4f9fc836b8b269f02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponHolder: {fileID: 9174459285572402722}
-  Arsenal: []
-  CurrentWeapon: {fileID: 0}
-  Pistol: {fileID: 2870099300405011388, guid: 8a96a3013cf891b4bbc4bebfab850b5b, type: 3}
   characterController: {fileID: 7713755545936489876}
+  _speed: 10
+  ChooseShootWeapon: {fileID: 2204634486537010599}
   _dashEffect: {fileID: 0}
   _dashDelay: 0
   _dashDistance: 5
-  _speed: 10
 --- !u!114 &2110699723118186234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,6 +117,22 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &2204634486537010599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9174459285769821758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e0914466b50b9429935de53c89a364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _weaponHolder: {fileID: 9174459285572402722}
+  Arsenal: []
+  CurrentWeapon: {fileID: 0}
+  Pistol: {fileID: 2870099300405011388, guid: 8a96a3013cf891b4bbc4bebfab850b5b, type: 3}
 --- !u!1 &9174459286382248538
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,12 +8,12 @@ public class ChooseShootWeapon : MonoBehaviour
     [SerializeField]
     protected Transform _weaponHolder;
 
-    public List<Weapon> Arsenal = new List<Weapon>();
+    private List<Weapon> Arsenal = new List<Weapon>();
     public Weapon CurrentWeapon;
     public Weapon Pistol;
     protected float _nextShootTime = 0;
 
-    protected void UseWeapon()
+    public void UseWeapon()
     {
         if (Time.time > _nextShootTime)
         {
@@ -22,7 +22,7 @@ public class ChooseShootWeapon : MonoBehaviour
         }    
     }
 
-    protected void PickUpWeapon()
+    public void PickUpWeapon()
     {
         Collider[] collidersAround = Physics.OverlapSphere(transform.position, 1.5f);
         List<TriggerWeapon> triggersList = new List<TriggerWeapon>();
@@ -67,7 +67,7 @@ public class ChooseShootWeapon : MonoBehaviour
         //}
     }
 
-    protected bool CheckIfWeaponInList(Weapon newWeapon)
+    private bool CheckIfWeaponInList(Weapon newWeapon)
     {
         foreach (Weapon weapon in Arsenal)
         {
@@ -79,7 +79,7 @@ public class ChooseShootWeapon : MonoBehaviour
         return false;
     }
 
-    protected void WeaponScroll(int n)
+    private void WeaponScroll(int n)
     {
         foreach (Weapon w in Arsenal)
         {
@@ -99,7 +99,7 @@ public class ChooseShootWeapon : MonoBehaviour
 
 
 
-    protected void GetWeapon(Weapon newWeapon)
+    private void GetWeapon(Weapon newWeapon)
     {
         MenuAudioController.Instance.PlaySound("ammo", false);
         foreach (Weapon g in Arsenal)//Transform child in _weaponHolder)
@@ -120,7 +120,7 @@ public class ChooseShootWeapon : MonoBehaviour
         GetWeapon(Pistol);
     }
 
-    protected void ChooseWeapon(float scroll)
+    public void ChooseWeapon(float scroll)
     {
         float scrollDir = scroll / Mathf.Abs(scroll);
         int currentWeaponIndex = Arsenal.IndexOf(CurrentWeapon);

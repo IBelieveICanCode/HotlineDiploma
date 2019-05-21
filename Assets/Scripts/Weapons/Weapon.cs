@@ -30,7 +30,7 @@ public abstract class Weapon: MonoBehaviour
         ammo--;  
         if (ammo <= 0)
         {
-            FindObjectOfType<PlayerControl>().RemoveWeaponFromArsenal(gameObject);
+            FindObjectOfType<PlayerControl>().ChooseShootWeapon.RemoveWeaponFromArsenal(gameObject);
         }
     }
 

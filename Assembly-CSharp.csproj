@@ -116,8 +116,10 @@
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
     <Compile Include="Assets\Scripts\BloodFollow.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Creatures\Enemy.cs" />
     <Compile Include="Assets\Scripts\Creatures\HeroUpgrades.cs" />
+    <Compile Include="Assets\Scripts\Creatures\PlayerBasicControl.cs" />
     <Compile Include="Assets\Scripts\Creatures\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Damager\Damager.cs" />
     <Compile Include="Assets\Scripts\Destructable\Destructable.cs" />
@@ -135,6 +137,8 @@
     <Compile Include="Assets\Scripts\Interface\IRewardable.cs" />
     <Compile Include="Assets\Scripts\Interface\IShooting.cs" />
     <Compile Include="Assets\Scripts\Interface\IVisible.cs" />
+    <Compile Include="Assets\Scripts\Map\DungeonMap.cs" />
+    <Compile Include="Assets\Scripts\Map\GameMapGenerator.cs" />
     <Compile Include="Assets\Scripts\Map\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\Map\MenuAudioController.cs" />
     <Compile Include="Assets\Scripts\Map\Spawner.cs" />
@@ -144,10 +148,11 @@
     <Compile Include="Assets\Scripts\Pickups\EnemyBonusSpawner.cs" />
     <Compile Include="Assets\Scripts\Pickups\HealthBonus.cs" />
     <Compile Include="Assets\Scripts\Pickups\Reward.cs" />
-    <Compile Include="Assets\Scripts\UI\CallHUDControl.cs" />
-    <Compile Include="Assets\Scripts\UI\ChooseSongHUD.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
-    <Compile Include="Assets\Scripts\UI\HUD.cs" />
+    <Compile Include="Assets\Scripts\UI\HUD\CallHUDControl.cs" />
+    <Compile Include="Assets\Scripts\UI\HUD\HUD.cs" />
+    <Compile Include="Assets\Scripts\UI\HUD\HUDChooseSong.cs" />
+    <Compile Include="Assets\Scripts\UI\HUD\HUDScoresScript.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\UI\UpgradeWindow.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bullet\Projectile.cs" />

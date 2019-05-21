@@ -9,7 +9,7 @@ public class Ammo : MonoBehaviour
         PlayerControl player = other.gameObject.GetComponent<PlayerControl>();
         if (player)
         {
-            player.CurrentWeapon.ammo = player.CurrentWeapon.maxAmmo;
+            player.ChooseShootWeapon.CurrentWeapon.ammo = player.ChooseShootWeapon.CurrentWeapon.maxAmmo;
             Destroy(gameObject);
         }
     }

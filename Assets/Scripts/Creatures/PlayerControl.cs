@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof (CharacterController))]
-public class PlayerControl: ChooseShootWeapon
+public class PlayerControl: PlayerBasicControl
 {
-    [SerializeField]
-    private CharacterController characterController;
+    public ChooseShootWeapon ChooseShootWeapon;
     [SerializeField]
     private Transform _dashEffect;
     private float _nextDashTime = 0;
@@ -15,8 +14,7 @@ public class PlayerControl: ChooseShootWeapon
     private float _dashDelay;
     [SerializeField]
     private float _dashDistance = 5f;
-    [SerializeField]
-    private float _speed = 10f;
+    
     
     void Awake ()
     {
@@ -25,27 +23,25 @@ public class PlayerControl: ChooseShootWeapon
 	
 	void Start ()
     {
-        GetPistol();
+        ChooseShootWeapon.GetPistol();
     }
     
     void Update ()
     {
         if (GameController.Instance.State == GameState.Play)
         {
-            LookAtTarget();
-            PickUpWeapon();
-            ControlCharacter();
-            HUD.Ammo = CurrentWeapon.ammo;
+            ChooseShootWeapon.PickUpWeapon();
+            ControlWeapon();
+            HUD.Ammo = ChooseShootWeapon.CurrentWeapon.ammo;
         }
     }
 
-    private void ControlCharacter()
+    private void ControlWeapon()
     {
-        if (Input.GetKey(KeyCode.Mouse0))   
-            UseWeapon();      
+        if (Input.GetKey(KeyCode.Mouse0))
+            ChooseShootWeapon.UseWeapon();      
         if (Input.GetAxis("Mouse ScrollWheel") != 0)
-            ChooseWeapon(Input.GetAxis("Mouse ScrollWheel"));
-
+            ChooseShootWeapon.ChooseWeapon(Input.GetAxis("Mouse ScrollWheel"));
 
     }
 
@@ -67,35 +63,5 @@ public class PlayerControl: ChooseShootWeapon
             return true;
         } return false;
       
-    }
-
-
-    void FixedUpdate()
-    {
-        //if (!Dash())
-            ApplyMovingForce();
-      
-    }
-    
-    private void ApplyMovingForce()
-    {
-        Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        Vector3 moveVelocity = moveInput.normalized * _speed;
-        characterController.Move(moveVelocity * Time.deltaTime); 
-    }
-
-
-    private void LookAtTarget()
-    {
-
-        Plane plane = new Plane(Vector3.up, transform.position);
-        float distance;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);     
-        if (plane.Raycast(ray, out distance))
-        {
-            Vector3 position = ray.GetPoint(distance); 
-            //position.y = transform.position.y;
-            transform.LookAt(position);
-        }
     }
 }
