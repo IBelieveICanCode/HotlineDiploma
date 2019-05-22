@@ -11,7 +11,8 @@
       <File FileName="Assets/Scripts/Map/MenuAudioController.cs" Line="12" Column="1" />
       <File FileName="Assets/Scripts/Destructable/Destructable.cs" Line="41" Column="9" />
       <File FileName="Assets/Scripts/Map/MapGenerator.cs" Line="244" Column="1" />
-      <File FileName="Assets/Scripts/Map/DungeonMap.cs" Line="58" Column="17" />
+      <File FileName="Assets/Scripts/Map/DungeonMap.cs" Line="220" Column="51" />
+      <File FileName="Assets/Scripts/CameraMovement.cs" Line="29" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -48,7 +49,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b8534be7-9b1c-4a1c-99cb-1a9b57edbb47" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/igor/Documents/GitHub/ActionShooter/Assets/Scripts/Map/DungeonMap.cs" relfile="Assets/Scripts/Map/DungeonMap.cs" line="190" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

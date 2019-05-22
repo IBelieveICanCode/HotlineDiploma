@@ -28,7 +28,7 @@ public class DungeonMap : MonoBehaviour
     MapExtended currentMap;
 
     private Vector3 initPoint = Vector3.zero;
-    private Vector3 lastInitPoint = Vector3.zero;
+    //private Vector3 lastInitPoint = Vector3.zero;
 
     private List<MapExtended> spawnedMapsList = new List<MapExtended>();
 
@@ -51,7 +51,7 @@ public class DungeonMap : MonoBehaviour
             if (k == 0)
             {
                 initPoint = Vector3.zero;
-                lastInitPoint = Vector3.zero;
+                //lastInitPoint = Vector3.zero;
                 currentMap.MapCenterWorld = initPoint;
                 spawnedMapsList.Add(currentMap);
             }
@@ -189,12 +189,14 @@ public class DungeonMap : MonoBehaviour
 
     private void SetUp(int k)
     {
+        //Create list of posible directions
         List<PossibleDirection> possiblesDir = new List<PossibleDirection>();
+        //Fill list with open side of previous map
         for (int i = 0; i < maps[k - 1].PossibleDirections.Length; i++)
         {
             if (maps[k - 1].PossibleDirections[i].Open)
             {
-                possiblesDir.Add(currentMap.PossibleDirections[i]);
+                possiblesDir.Add(maps[k - 1].PossibleDirections[i]);
             }
         }
         // Here we check for tile open directions
@@ -215,8 +217,8 @@ public class DungeonMap : MonoBehaviour
             Vector2 adderLast = mapShiftDirection * prevMapSize;
             Vector2 currentMapSize = new Vector2(currentMap.mapSize.x, currentMap.mapSize.y) / 2;
             Vector2 adderCurrent = mapShiftDirection * currentMapSize;
-            initPoint = lastInitPoint + new Vector3(adderLast.x, 0f, adderLast.y) * tileSize + new Vector3(adderCurrent.x, 0f, adderCurrent.y) * tileSize;
-            lastInitPoint = initPoint;
+            initPoint = maps[k - 1].MapCenterWorld + new Vector3(adderLast.x, 0f, adderLast.y) * tileSize + new Vector3(adderCurrent.x, 0f, adderCurrent.y) * tileSize;
+            //lastInitPoint = initPoint;
             currentMap.MapCenterWorld = initPoint;
 
             //Check for current map around spawning position in 4 directions 
@@ -253,6 +255,7 @@ public class DungeonMap : MonoBehaviour
             spawnedMapsList.Add(currentMap);
         }
         else {
+            print("there is no fit element, take" + (k - 1).ToString());
             SetUp(k - 1);
         }
     }
