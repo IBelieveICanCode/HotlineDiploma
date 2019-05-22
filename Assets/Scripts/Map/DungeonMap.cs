@@ -44,35 +44,36 @@ public class DungeonMap : MonoBehaviour
         {
             currentMap = maps[k];
 
-            for (int i = 0; i < currentMap.PosibleDirections.Length; i++)
+            for (int i = 0; i < currentMap.PossibleDirections.Length; i++)
             {
-                print( string.Format("Current map open direction {0}, current map flag {1}, elementNum {2}", currentMap.PosibleDirections[i].OpenPos, currentMap.PosibleDirections[i].Open,i));
+                print( string.Format("Current map open direction {0}, current map flag {1}, elementNum {2}", currentMap.PossibleDirections[i].OpenPos, currentMap.PossibleDirections[i].Open,i));
             }
             if (k == 0)
             {
                 initPoint = Vector3.zero;
                 lastInitPoint = Vector3.zero;
                 currentMap.MapCenterWorld = initPoint;
+                spawnedMapsList.Add(currentMap);
             }
             else
             {
                 List<PossibleDirection> possiblesDir = new List<PossibleDirection>();
-                for(int i = 0; i< maps[k-1].PosibleDirections.Length;i++)
+                for(int i = 0; i< maps[k-1].PossibleDirections.Length;i++)
                 {
-                    if (maps[k - 1].PosibleDirections[i].Open)
+                    if (maps[k - 1].PossibleDirections[i].Open)
                     {
-                        possiblesDir.Add(currentMap.PosibleDirections[i]);
+                        possiblesDir.Add(currentMap.PossibleDirections[i]);
                     }
                 }
                 if (possiblesDir.Count > 0) {
                     int randElement = Random.Range(0, possiblesDir.Count);
                     Vector2 mapShiftDirection = possiblesDir[randElement].OpenPos;
 
-                    for (int i = 0; i < maps[k-1].PosibleDirections.Length; i++)
+                    for (int i = 0; i < maps[k-1].PossibleDirections.Length; i++)
                     {
-                        if (maps[k - 1].PosibleDirections[i].OpenPos == mapShiftDirection)
+                        if (maps[k - 1].PossibleDirections[i].OpenPos == mapShiftDirection)
                         {
-                            maps[k - 1].PosibleDirections[i].Open = false;
+                            maps[k - 1].PossibleDirections[i].Open = false;
                         }
                     }
 
@@ -104,23 +105,23 @@ public class DungeonMap : MonoBehaviour
                         //up,down,right,left
                         if (m.MapCenterWorld == up)
                         {
-                            currentMap.PosibleDirections[0].Open = false;
+                            currentMap.PossibleDirections[0].Open = false;
                             print("up if filled");
                         }
                         if (m.MapCenterWorld == down)
                         {
-                            currentMap.PosibleDirections[1].Open = false;
+                            currentMap.PossibleDirections[1].Open = false;
                             print("down if filled");
                         }
                         if (m.MapCenterWorld == right)
                         {
                             print("right if filled");
-                            currentMap.PosibleDirections[2].Open = false;
+                            currentMap.PossibleDirections[2].Open = false;
                         }
                         if (m.MapCenterWorld == left)
                         {
                             print("left if filled");
-                            currentMap.PosibleDirections[3].Open = false;
+                            currentMap.PossibleDirections[3].Open = false;
                         }
                     }
                     spawnedMapsList.Add(currentMap);
@@ -215,7 +216,7 @@ public class DungeonMap : MonoBehaviour
 
         foreach (MapExtended m in maps)
         { 
-            foreach(PossibleDirection pd in m.PosibleDirections)
+            foreach(PossibleDirection pd in m.PossibleDirections)
             { 
                 if(pd.Open)
                 {
@@ -348,7 +349,7 @@ public class DungeonMap : MonoBehaviour
 [System.Serializable]
  public class MapExtended : Map
 {
-    public PossibleDirection[] PosibleDirections = new PossibleDirection[]
+    public PossibleDirection[] PossibleDirections = new PossibleDirection[]
     {
         new PossibleDirection(Vector2.up,true),
         new PossibleDirection(Vector2.down, true) ,
