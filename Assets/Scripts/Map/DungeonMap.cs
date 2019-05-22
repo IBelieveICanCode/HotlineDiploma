@@ -30,6 +30,8 @@ public class DungeonMap : MonoBehaviour
     private Vector3 initPoint = Vector3.zero;
     private Vector3 lastInitPoint = Vector3.zero;
 
+    private List<MapExtended> spawnedMapsList = new List<MapExtended>();
+
     protected virtual void Awake()
     {
         GenerateMap();
@@ -41,6 +43,7 @@ public class DungeonMap : MonoBehaviour
         for (int k = 0; k < maps.Length; k++)
         {
             currentMap = maps[k];
+
             for (int i = 0; i < currentMap.PosibleDirections.Length; i++)
             {
                 print( string.Format("Current map open direction {0}, current map flag {1}, elementNum {2}", currentMap.PosibleDirections[i].OpenPos, currentMap.PosibleDirections[i].Open,i));
@@ -72,13 +75,15 @@ public class DungeonMap : MonoBehaviour
                             maps[k - 1].PosibleDirections[i].Open = false;
                         }
                     }
-                    for (int i = 0; i < currentMap.PosibleDirections.Length; i++)
-                    {
-                        if (currentMap.PosibleDirections[i].OpenPos == -mapShiftDirection)
-                        {
-                            currentMap.PosibleDirections[i].Open = false;
-                        }
-                    }
+
+                    //for (int i = 0; i < currentMap.PosibleDirections.Length; i++)
+                    //{
+                    //    if (currentMap.PosibleDirections[i].OpenPos == -mapShiftDirection)
+                    //    {
+                    //        currentMap.PosibleDirections[i].Open = false;
+                    //    }
+                    //}
+
                     Vector2 prevMapSize = new Vector2(maps[k - 1].mapSize.x, maps[k - 1].mapSize.y) /2;
                     Vector2 adderLast =  mapShiftDirection * prevMapSize;
                     Vector2 currentMapSize = new Vector2(currentMap.mapSize.x, currentMap.mapSize.y) / 2;
@@ -86,6 +91,39 @@ public class DungeonMap : MonoBehaviour
                     initPoint = lastInitPoint + new Vector3(adderLast.x,0f,adderLast.y) *tileSize + new Vector3(adderCurrent.x, 0f, adderCurrent.y) * tileSize;
                     lastInitPoint = initPoint;
                     currentMap.MapCenterWorld = initPoint;
+
+                    //Check for current map around spawning position in 4 directions 
+                    //this will work correctly obly for square maps
+                    // should also think about initial spawn pos for maps
+                    Vector3 up = Vector3.forward * currentMap.mapSize.x * tileSize + initPoint;
+                    Vector3 down = Vector3.back * currentMap.mapSize.x * tileSize + initPoint;
+                    Vector3 right = Vector3.right * currentMap.mapSize.x * tileSize + initPoint;
+                    Vector3 left = Vector3.left * currentMap.mapSize.x * tileSize + initPoint;
+                    foreach(MapExtended m in spawnedMapsList)
+                    {
+                        //up,down,right,left
+                        if (m.MapCenterWorld == up)
+                        {
+                            currentMap.PosibleDirections[0].Open = false;
+                            print("up if filled");
+                        }
+                        if (m.MapCenterWorld == down)
+                        {
+                            currentMap.PosibleDirections[1].Open = false;
+                            print("down if filled");
+                        }
+                        if (m.MapCenterWorld == right)
+                        {
+                            print("right if filled");
+                            currentMap.PosibleDirections[2].Open = false;
+                        }
+                        if (m.MapCenterWorld == left)
+                        {
+                            print("left if filled");
+                            currentMap.PosibleDirections[3].Open = false;
+                        }
+                    }
+                    spawnedMapsList.Add(currentMap);
                 }
             }
 

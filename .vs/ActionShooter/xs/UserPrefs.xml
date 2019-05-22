@@ -11,7 +11,7 @@
       <File FileName="Assets/Scripts/Map/MenuAudioController.cs" Line="12" Column="1" />
       <File FileName="Assets/Scripts/Destructable/Destructable.cs" Line="41" Column="9" />
       <File FileName="Assets/Scripts/Map/MapGenerator.cs" Line="244" Column="1" />
-      <File FileName="Assets/Scripts/Map/DungeonMap.cs" Line="70" Column="73" />
+      <File FileName="Assets/Scripts/Map/DungeonMap.cs" Line="105" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,24 +23,34 @@
                 <Node name="Damager" expanded="True" />
                 <Node name="Destructable" expanded="True" />
                 <Node name="Interface" expanded="True" />
-                <Node name="Map" expanded="True">
-                  <Node name="DungeonMap.cs" selected="True" />
-                </Node>
+                <Node name="Map" expanded="True" />
                 <Node name="Pickups" expanded="True" />
                 <Node name="UI" expanded="True" />
-                <Node name="Weapons" expanded="True" />
+                <Node name="Weapons" expanded="True">
+                  <Node name="MachineGun.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="ActionShooter" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fd0d9080-3c45-4852-adcc-17ec296c9738" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b8534be7-9b1c-4a1c-99cb-1a9b57edbb47" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint hitCountMode="GreaterThanOrEqualTo" hitCount="3" file="/Users/igor/Documents/GitHub/ActionShooter/Assets/Scripts/Map/DungeonMap.cs" relfile="Assets/Scripts/Map/DungeonMap.cs" line="105" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
