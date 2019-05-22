@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{A7F29C90-3196-2FBB-1DEC-84B2110AA31D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Map/MenuAudioController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Map/DungeonMap.cs">
     <Files>
-      <File FileName="Assets/Scripts/Map/Spawner.cs" Line="97" Column="10" />
+      <File FileName="Assets/Scripts/Map/Spawner.cs" Line="97" Column="1" />
       <File FileName="Assets/Scripts/Interface/IVisible.cs" Line="5" Column="27" />
       <File FileName="Assets/Scripts/Destructable/PlayerParticleDestructable.cs" Line="5" Column="48" />
       <File FileName="Assets/Scripts/Weapons/LaserGun.cs" Line="70" Column="84" />
       <File FileName="Assets/Scripts/UI/HealthBar.cs" Line="16" Column="71" />
       <File FileName="Assets/Scripts/Pickups/EnemyBonusSpawner.cs" Line="18" Column="20" />
       <File FileName="Assets/Scripts/Pickups/HealthBonus.cs" Line="19" Column="1" />
-      <File FileName="Assets/Scripts/UI/HUD.cs" Line="108" Column="26" />
       <File FileName="Assets/Scripts/Map/MenuAudioController.cs" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/Destructable/Destructable.cs" Line="41" Column="70" />
+      <File FileName="Assets/Scripts/Destructable/Destructable.cs" Line="41" Column="9" />
       <File FileName="Assets/Scripts/Map/MapGenerator.cs" Line="244" Column="1" />
+      <File FileName="Assets/Scripts/Map/DungeonMap.cs" Line="70" Column="73" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,7 +24,7 @@
                 <Node name="Destructable" expanded="True" />
                 <Node name="Interface" expanded="True" />
                 <Node name="Map" expanded="True">
-                  <Node name="MenuAudioController.cs" selected="True" />
+                  <Node name="DungeonMap.cs" selected="True" />
                 </Node>
                 <Node name="Pickups" expanded="True" />
                 <Node name="UI" expanded="True" />
@@ -34,16 +34,11 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="ActionShooter" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="abac69fc-65d7-4bbd-a9a4-a8999bc9b921" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fd0d9080-3c45-4852-adcc-17ec296c9738" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

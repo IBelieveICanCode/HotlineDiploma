@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b71b30f882fb8774497ddae177a2d9b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  border: {fileID: 5831534295012509097, guid: d0a369a9ee029274fba984d272c070b4, type: 3}
+  border: {fileID: 5831534295012509097, guid: a318e2bd97ce641be9a09d496e5ff7f3, type: 3}
   maps:
   - mapSize:
       x: 10
@@ -345,8 +345,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -354,8 +355,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -363,8 +365,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -372,8 +375,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -381,8 +385,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -390,8 +395,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -399,8 +405,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -408,8 +415,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -417,8 +425,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -426,8 +435,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -435,8 +445,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -444,8 +455,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -453,8 +465,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -462,8 +475,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -471,8 +485,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -480,8 +495,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -489,8 +505,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -498,8 +515,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -507,8 +525,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
       x: 10
       y: 10
@@ -516,8 +535,9 @@ MonoBehaviour:
     seed: 0
     minObstacleHeight: 1
     maxObstacleHeight: 3
-    foregroundColour: {r: 0.6886792, g: 0.5919775, b: 0.20465466, a: 0}
-    backgroundColour: {r: 0.8490566, g: 0.06808474, b: 0.41901547, a: 0}
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
   tilePrefab: {fileID: 2561900045770523630, guid: 1e5ed4c14b5c20746878d3640ab440d2,
     type: 3}
   obstaclePrefab: {fileID: 5195643321336792987, guid: 6b2d6511fd501fb4f82ffc1df6c12df1,
@@ -907,7 +927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9174459286167840153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.39, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 9174459285233802751}

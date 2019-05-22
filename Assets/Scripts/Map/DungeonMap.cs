@@ -49,11 +49,10 @@ public class DungeonMap : MonoBehaviour
             {
                 initPoint = Vector3.zero;
                 lastInitPoint = Vector3.zero;
+                currentMap.MapCenterWorld = initPoint;
             }
             else
             {
-                //Can't close open direction in prev map
-                //initPoint = current mapPosition + RandomOpendirection * prevMapSize *(randomOpendirectionComponent) * tileSize ;
                 List<PossibleDirection> possiblesDir = new List<PossibleDirection>();
                 for(int i = 0; i< maps[k-1].PosibleDirections.Length;i++)
                 {
@@ -66,6 +65,13 @@ public class DungeonMap : MonoBehaviour
                     int randElement = Random.Range(0, possiblesDir.Count);
                     Vector2 mapShiftDirection = possiblesDir[randElement].OpenPos;
 
+                    for (int i = 0; i < maps[k-1].PosibleDirections.Length; i++)
+                    {
+                        if (maps[k - 1].PosibleDirections[i].OpenPos == mapShiftDirection)
+                        {
+                            maps[k - 1].PosibleDirections[i].Open = false;
+                        }
+                    }
                     for (int i = 0; i < currentMap.PosibleDirections.Length; i++)
                     {
                         if (currentMap.PosibleDirections[i].OpenPos == -mapShiftDirection)
@@ -79,6 +85,7 @@ public class DungeonMap : MonoBehaviour
                     Vector2 adderCurrent = mapShiftDirection * currentMapSize;
                     initPoint = lastInitPoint + new Vector3(adderLast.x,0f,adderLast.y) *tileSize + new Vector3(adderCurrent.x, 0f, adderCurrent.y) * tileSize;
                     lastInitPoint = initPoint;
+                    currentMap.MapCenterWorld = initPoint;
                 }
             }
 
@@ -102,31 +109,6 @@ public class DungeonMap : MonoBehaviour
 
             Transform mapHolder = new GameObject(holderName).transform;
             mapHolder.parent = transform;
-
-            //Spawning borders
-            float _thickness = 0.5f;
-            Vector2 _mapBorders = new Vector2(currentMap.mapSize.x * tileSize, currentMap.mapSize.y * tileSize);
-
-            Vector3 _bPos = new Vector3(currentMap.mapSize.x * tileSize / 2 + _thickness / 2, 0f, 0f) + initPoint;
-            Transform b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
-            b.localScale = new Vector3(_thickness, 5f, _mapBorders.y);
-            b.parent = mapHolder;
-
-            _bPos = new Vector3(-currentMap.mapSize.x * tileSize / 2 - _thickness / 2, 0f, 0f) + initPoint;
-            b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
-            b.localScale = new Vector3(_thickness, 5f, _mapBorders.y);
-            b.parent = mapHolder;
-
-            _bPos = new Vector3(0f, 0f, currentMap.mapSize.y * tileSize / 2 + _thickness / 2) + initPoint;
-            b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
-            b.localScale = new Vector3(_mapBorders.x, 5f, _thickness);
-            b.parent = mapHolder;
-
-            _bPos = new Vector3(0f, 0f, -currentMap.mapSize.y * tileSize / 2 - _thickness / 2) + initPoint;
-            b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
-            b.localScale = new Vector3(_mapBorders.x, 5f, _thickness);
-            b.parent = mapHolder;
-
 
             // Spawning tiles
             
@@ -181,32 +163,80 @@ public class DungeonMap : MonoBehaviour
 
             shuffledOpenTileCoords = new Queue<Coord>(Utility.ShuffleArray(allOpenCoords.ToArray(), currentMap.seed));
 
-            //// Creating navmesh mask
-            //Transform maskLeft = Instantiate(navmeshMaskPrefab, Vector3.left * (currentMap.mapSize.x + maxMapSize.x) / 4f * tileSize + initPoint, Quaternion.identity) as Transform;
-            //maskLeft.parent = mapHolder;
-            //maskLeft.localScale = new Vector3((maxMapSize.x - currentMap.mapSize.x) / 2f, 1, currentMap.mapSize.y) * tileSize;
-
-            //Transform maskRight = Instantiate(navmeshMaskPrefab, Vector3.right * (currentMap.mapSize.x + maxMapSize.x) / 4f * tileSize + initPoint, Quaternion.identity) as Transform;
-            //maskRight.parent = mapHolder;
-            //maskRight.localScale = new Vector3((maxMapSize.x - currentMap.mapSize.x) / 2f, 1, currentMap.mapSize.y) * tileSize;
-
-            //Transform maskTop = Instantiate(navmeshMaskPrefab, Vector3.forward * (currentMap.mapSize.y + maxMapSize.y) / 4f * tileSize + initPoint, Quaternion.identity) as Transform;
-            //maskTop.parent = mapHolder;
-            //maskTop.localScale = new Vector3(maxMapSize.x, 1, (maxMapSize.y - currentMap.mapSize.y) / 2f) * tileSize;
-
-            //Transform maskBottom = Instantiate(navmeshMaskPrefab, Vector3.back * (currentMap.mapSize.y + maxMapSize.y) / 4f * tileSize + initPoint, Quaternion.identity) as Transform;
-            //maskBottom.parent = mapHolder;
-            //maskBottom.localScale = new Vector3(maxMapSize.x, 1, (maxMapSize.y - currentMap.mapSize.y) / 2f) * tileSize;
-
-            //navmeshFloor.localScale = new Vector3(maxMapSize.x, maxMapSize.y) * tileSize;
-
             Transform localFloor = Instantiate(mapFloor, initPoint+Vector3.down*0.1f, Quaternion.identity);
             localFloor.eulerAngles = new Vector3(90f, 0f);
             localFloor.localScale = new Vector3(currentMap.mapSize.x * tileSize, currentMap.mapSize.y * tileSize, 1f);
             localFloor.parent = mapHolder;
-
-           
         }
+
+        float _thickness = 0.5f;
+        Vector2 _mapBorders = Vector2.zero;
+        Vector3 _bPos= Vector3.zero;
+        Transform b;
+        //Vector2 _mapBorders = new Vector2(m.mapSize.x * tileSize, m.mapSize.y * tileSize);
+
+        foreach (MapExtended m in maps)
+        { 
+            foreach(PossibleDirection pd in m.PosibleDirections)
+            { 
+                if(pd.Open)
+                {
+                    //pd.OpenPos;
+                    if(pd.OpenPos == Vector2.right)
+                    {
+                        _mapBorders = new Vector2(m.mapSize.x * tileSize, m.mapSize.y * tileSize);
+                        _bPos = new Vector3(m.mapSize.x * tileSize / 2 + _thickness / 2, 0f, 0f) + m.MapCenterWorld;
+                        b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+                        b.localScale = new Vector3(_thickness, 5f, _mapBorders.y);
+                    }
+                    else if (pd.OpenPos == Vector2.left)
+                    {
+                        _mapBorders = new Vector2(m.mapSize.x * tileSize, m.mapSize.y * tileSize);
+                        _bPos = new Vector3(-m.mapSize.x * tileSize / 2 - _thickness / 2, 0f, 0f) + m.MapCenterWorld;
+                        b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+                        b.localScale = new Vector3(_thickness, 5f, _mapBorders.y);
+                    }
+                    else if (pd.OpenPos == Vector2.up)
+                    {
+                        _mapBorders = new Vector2(m.mapSize.x * tileSize, m.mapSize.y * tileSize);
+                        _bPos = new Vector3(0f, 0f, m.mapSize.x * tileSize / 2 + _thickness / 2) + m.MapCenterWorld;
+                        b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+                        b.localScale = new Vector3(_mapBorders.x, 5f, _thickness);
+                    }
+                    else if (pd.OpenPos == Vector2.down)
+                    {
+                        _mapBorders = new Vector2(m.mapSize.x * tileSize, m.mapSize.y * tileSize);
+                        _bPos = new Vector3(0f, 0f, -m.mapSize.x * tileSize / 2 - _thickness / 2) + m.MapCenterWorld;
+                        b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+                        b.localScale = new Vector3(_mapBorders.x, 5f, _thickness);
+                    }
+                    // b.parent = mapHolder;
+                }
+            }
+        }
+        //Spawning borders
+        //float _thickness = 0.5f;
+        //Vector2 _mapBorders = new Vector2(currentMap.mapSize.x * tileSize, currentMap.mapSize.y * tileSize);
+
+        //Vector3 _bPos = new Vector3(currentMap.mapSize.x * tileSize / 2 + _thickness / 2, 0f, 0f) + initPoint;
+        //b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+        //b.localScale = new Vector3(_thickness, 5f, _mapBorders.y);
+        //b.parent = mapHolder;
+
+        //_bPos = new Vector3(-currentMap.mapSize.x * tileSize / 2 - _thickness / 2, 0f, 0f) + initPoint;
+        //b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+        //b.localScale = new Vector3(_thickness, 5f, _mapBorders.y);
+        //b.parent = mapHolder;
+
+        //_bPos = new Vector3(0f, 0f, currentMap.mapSize.y * tileSize / 2 + _thickness / 2) + initPoint;
+        //b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+        //b.localScale = new Vector3(_mapBorders.x, 5f, _thickness);
+        //b.parent = mapHolder;
+
+        //_bPos = new Vector3(0f, 0f, -currentMap.mapSize.y * tileSize / 2 - _thickness / 2) + initPoint;
+        //b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
+        //b.localScale = new Vector3(_mapBorders.x, 5f, _thickness);
+        //b.parent = mapHolder;
     }
 
     bool MapIsFullyAccessible(bool[,] obstacleMap, int currentObstacleCount)
@@ -288,10 +318,8 @@ public class DungeonMap : MonoBehaviour
         new PossibleDirection(Vector2.left, true)
     };
 
-    public void GetRandomPossibleDirrection()
-    {
-
-    }
+    [HideInInspector]
+    public Vector3 MapCenterWorld = Vector3.zero; 
 }
 
 public class PossibleDirection
@@ -299,7 +327,7 @@ public class PossibleDirection
     public Vector2 OpenPos;
     public bool Open;
 
-    public PossibleDirection(Vector3 dir, bool flag)
+    public PossibleDirection(Vector2 dir, bool flag)
     {
         OpenPos = dir;
         Open = flag;
