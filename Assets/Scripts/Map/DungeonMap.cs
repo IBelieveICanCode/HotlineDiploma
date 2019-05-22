@@ -57,75 +57,7 @@ public class DungeonMap : MonoBehaviour
             }
             else
             {
-                List<PossibleDirection> possiblesDir = new List<PossibleDirection>();
-                for(int i = 0; i< maps[k-1].PossibleDirections.Length;i++)
-                {
-                    if (maps[k - 1].PossibleDirections[i].Open)
-                    {
-                        possiblesDir.Add(currentMap.PossibleDirections[i]);
-                    }
-                }
-                if (possiblesDir.Count > 0) {
-                    int randElement = Random.Range(0, possiblesDir.Count);
-                    Vector2 mapShiftDirection = possiblesDir[randElement].OpenPos;
-
-                    for (int i = 0; i < maps[k-1].PossibleDirections.Length; i++)
-                    {
-                        if (maps[k - 1].PossibleDirections[i].OpenPos == mapShiftDirection)
-                        {
-                            maps[k - 1].PossibleDirections[i].Open = false;
-                        }
-                    }
-
-                    //for (int i = 0; i < currentMap.PosibleDirections.Length; i++)
-                    //{
-                    //    if (currentMap.PosibleDirections[i].OpenPos == -mapShiftDirection)
-                    //    {
-                    //        currentMap.PosibleDirections[i].Open = false;
-                    //    }
-                    //}
-
-                    Vector2 prevMapSize = new Vector2(maps[k - 1].mapSize.x, maps[k - 1].mapSize.y) /2;
-                    Vector2 adderLast =  mapShiftDirection * prevMapSize;
-                    Vector2 currentMapSize = new Vector2(currentMap.mapSize.x, currentMap.mapSize.y) / 2;
-                    Vector2 adderCurrent = mapShiftDirection * currentMapSize;
-                    initPoint = lastInitPoint + new Vector3(adderLast.x,0f,adderLast.y) *tileSize + new Vector3(adderCurrent.x, 0f, adderCurrent.y) * tileSize;
-                    lastInitPoint = initPoint;
-                    currentMap.MapCenterWorld = initPoint;
-
-                    //Check for current map around spawning position in 4 directions 
-                    //this will work correctly obly for square maps
-                    // should also think about initial spawn pos for maps
-                    Vector3 up = Vector3.forward * currentMap.mapSize.x * tileSize + initPoint;
-                    Vector3 down = Vector3.back * currentMap.mapSize.x * tileSize + initPoint;
-                    Vector3 right = Vector3.right * currentMap.mapSize.x * tileSize + initPoint;
-                    Vector3 left = Vector3.left * currentMap.mapSize.x * tileSize + initPoint;
-                    foreach(MapExtended m in spawnedMapsList)
-                    {
-                        //up,down,right,left
-                        if (m.MapCenterWorld == up)
-                        {
-                            currentMap.PossibleDirections[0].Open = false;
-                            print("up if filled");
-                        }
-                        if (m.MapCenterWorld == down)
-                        {
-                            currentMap.PossibleDirections[1].Open = false;
-                            print("down if filled");
-                        }
-                        if (m.MapCenterWorld == right)
-                        {
-                            print("right if filled");
-                            currentMap.PossibleDirections[2].Open = false;
-                        }
-                        if (m.MapCenterWorld == left)
-                        {
-                            print("left if filled");
-                            currentMap.PossibleDirections[3].Open = false;
-                        }
-                    }
-                    spawnedMapsList.Add(currentMap);
-                }
+                SetUp(k);
             }
 
             tileMap = new Transform[currentMap.mapSize.x, currentMap.mapSize.y];
@@ -212,8 +144,8 @@ public class DungeonMap : MonoBehaviour
         Vector2 _mapBorders = Vector2.zero;
         Vector3 _bPos= Vector3.zero;
         Transform b;
-        //Vector2 _mapBorders = new Vector2(m.mapSize.x * tileSize, m.mapSize.y * tileSize);
 
+        //This methode spawn borders
         foreach (MapExtended m in maps)
         { 
             foreach(PossibleDirection pd in m.PossibleDirections)
@@ -253,29 +185,76 @@ public class DungeonMap : MonoBehaviour
                 }
             }
         }
-        //Spawning borders
-        //float _thickness = 0.5f;
-        //Vector2 _mapBorders = new Vector2(currentMap.mapSize.x * tileSize, currentMap.mapSize.y * tileSize);
+    }
 
-        //Vector3 _bPos = new Vector3(currentMap.mapSize.x * tileSize / 2 + _thickness / 2, 0f, 0f) + initPoint;
-        //b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
-        //b.localScale = new Vector3(_thickness, 5f, _mapBorders.y);
-        //b.parent = mapHolder;
+    private void SetUp(int k)
+    {
+        List<PossibleDirection> possiblesDir = new List<PossibleDirection>();
+        for (int i = 0; i < maps[k - 1].PossibleDirections.Length; i++)
+        {
+            if (maps[k - 1].PossibleDirections[i].Open)
+            {
+                possiblesDir.Add(currentMap.PossibleDirections[i]);
+            }
+        }
+        // Here we check for tile open directions
+        if (possiblesDir.Count > 0)
+        {
+            int randElement = Random.Range(0, possiblesDir.Count);
+            Vector2 mapShiftDirection = possiblesDir[randElement].OpenPos;
 
-        //_bPos = new Vector3(-currentMap.mapSize.x * tileSize / 2 - _thickness / 2, 0f, 0f) + initPoint;
-        //b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
-        //b.localScale = new Vector3(_thickness, 5f, _mapBorders.y);
-        //b.parent = mapHolder;
+            for (int i = 0; i < maps[k - 1].PossibleDirections.Length; i++)
+            {
+                if (maps[k - 1].PossibleDirections[i].OpenPos == mapShiftDirection)
+                {
+                    maps[k - 1].PossibleDirections[i].Open = false;
+                }
+            }
 
-        //_bPos = new Vector3(0f, 0f, currentMap.mapSize.y * tileSize / 2 + _thickness / 2) + initPoint;
-        //b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
-        //b.localScale = new Vector3(_mapBorders.x, 5f, _thickness);
-        //b.parent = mapHolder;
+            Vector2 prevMapSize = new Vector2(maps[k - 1].mapSize.x, maps[k - 1].mapSize.y) / 2;
+            Vector2 adderLast = mapShiftDirection * prevMapSize;
+            Vector2 currentMapSize = new Vector2(currentMap.mapSize.x, currentMap.mapSize.y) / 2;
+            Vector2 adderCurrent = mapShiftDirection * currentMapSize;
+            initPoint = lastInitPoint + new Vector3(adderLast.x, 0f, adderLast.y) * tileSize + new Vector3(adderCurrent.x, 0f, adderCurrent.y) * tileSize;
+            lastInitPoint = initPoint;
+            currentMap.MapCenterWorld = initPoint;
 
-        //_bPos = new Vector3(0f, 0f, -currentMap.mapSize.y * tileSize / 2 - _thickness / 2) + initPoint;
-        //b = Instantiate(border, _bPos, Quaternion.identity) as Transform;
-        //b.localScale = new Vector3(_mapBorders.x, 5f, _thickness);
-        //b.parent = mapHolder;
+            //Check for current map around spawning position in 4 directions 
+            //this will work correctly obly for square maps
+            // should also think about initial spawn pos for maps
+            Vector3 up = Vector3.forward * currentMap.mapSize.x * tileSize + initPoint;
+            Vector3 down = Vector3.back * currentMap.mapSize.x * tileSize + initPoint;
+            Vector3 right = Vector3.right * currentMap.mapSize.x * tileSize + initPoint;
+            Vector3 left = Vector3.left * currentMap.mapSize.x * tileSize + initPoint;
+            foreach (MapExtended m in spawnedMapsList)
+            {
+                //up,down,right,left
+                if (m.MapCenterWorld == up)
+                {
+                    currentMap.PossibleDirections[0].Open = false;
+                    print("up if filled");
+                }
+                if (m.MapCenterWorld == down)
+                {
+                    currentMap.PossibleDirections[1].Open = false;
+                    print("down if filled");
+                }
+                if (m.MapCenterWorld == right)
+                {
+                    print("right if filled");
+                    currentMap.PossibleDirections[2].Open = false;
+                }
+                if (m.MapCenterWorld == left)
+                {
+                    print("left if filled");
+                    currentMap.PossibleDirections[3].Open = false;
+                }
+            }
+            spawnedMapsList.Add(currentMap);
+        }
+        else {
+            SetUp(k - 1);
+        }
     }
 
     bool MapIsFullyAccessible(bool[,] obstacleMap, int currentObstacleCount)

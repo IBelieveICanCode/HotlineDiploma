@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -339,8 +339,8 @@ MonoBehaviour:
   border: {fileID: 5831534295012509097, guid: a318e2bd97ce641be9a09d496e5ff7f3, type: 3}
   maps:
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -349,8 +349,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -359,8 +359,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -369,8 +369,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -379,8 +379,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -389,8 +389,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -399,8 +399,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -409,8 +409,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -419,8 +419,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -429,8 +429,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -439,8 +439,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -449,8 +449,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -459,8 +459,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -469,8 +469,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -479,8 +479,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -489,8 +489,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -499,8 +499,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -509,8 +509,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -519,8 +519,8 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
@@ -529,8 +529,1808 @@ MonoBehaviour:
     backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
     MapCenterWorld: {x: 0, y: 0, z: 0}
   - mapSize:
-      x: 10
-      y: 10
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
+    obstaclePercent: 0.075
+    seed: 0
+    minObstacleHeight: 1
+    maxObstacleHeight: 3
+    foregroundColour: {r: 0.9433962, g: 0.13794944, b: 0.5832063, a: 0}
+    backgroundColour: {r: 0.15218942, g: 0.7169812, b: 0.22559962, a: 0}
+    MapCenterWorld: {x: 0, y: 0, z: 0}
+  - mapSize:
+      x: 2
+      y: 2
     obstaclePercent: 0.075
     seed: 0
     minObstacleHeight: 1
