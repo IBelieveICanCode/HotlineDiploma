@@ -19,7 +19,7 @@ public class DungeonMap : MonoBehaviour
 
     [Range(0, 1)]
     public float outlinePercent;
-    public float tileSize;
+    public static float tileSize = 1;
     List<Coord> allTileCoords;
     Queue<Coord> shuffledTileCoords;
     Queue<Coord> shuffledOpenTileCoords;
