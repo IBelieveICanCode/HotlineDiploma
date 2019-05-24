@@ -57,6 +57,7 @@ public class DungeonMap : MonoBehaviour
             }
             else
             {
+                //This methode allow you to avoid dead ends in dungeon spawn
                 SetUp(k);
             }
 

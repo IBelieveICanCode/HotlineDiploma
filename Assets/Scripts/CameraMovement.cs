@@ -26,6 +26,6 @@ public class CameraMovement : MonoBehaviour
 
     private void Update()
     {
-        transform.eulerAngles = new Vector3(90f, 0f);
+        transform.eulerAngles = new Vector3(45f, 30f);
     }
 }

@@ -11,7 +11,7 @@ public class PlayerBasicControl : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        LookAtTarget();
+        //LookAtTarget();
         MovePlayer();
 
     }
