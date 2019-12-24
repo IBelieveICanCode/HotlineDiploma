@@ -70,6 +70,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -136,7 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152dc6ed24097314c87be886cde82c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 25
+  target: {fileID: 0}
+  Damage: 0
 --- !u!96 &96541559770676816
 TrailRenderer:
   serializedVersion: 2
@@ -163,6 +165,7 @@ TrailRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

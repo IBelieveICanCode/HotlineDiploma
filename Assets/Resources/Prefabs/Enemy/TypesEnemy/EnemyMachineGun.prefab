@@ -56,6 +56,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -184,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
-  hitPoints: 50
+  hitPoints: 100
   hitPointsCurrent: 0
 --- !u!195 &1369202613185361549
 NavMeshAgent:
@@ -237,12 +238,12 @@ MonoBehaviour:
   animator: {fileID: 1369202613185361551}
   target: {fileID: 0}
   medkit: {fileID: 0}
-  weapon: {fileID: 0}
+  weapon: {fileID: 8372532362378389874, guid: 78c562e96cc606f4396bc5abf3564367, type: 3}
   enemyWeapon: {fileID: 3243809242026669359, guid: 78c562e96cc606f4396bc5abf3564367,
     type: 3}
   weaponHolder: {fileID: 1370098345279392773}
   nextShootTime: 1
-  reward: 15
+  reward: 0
 --- !u!111 &1369202613185361548
 Animation:
   m_ObjectHideFlags: 0
@@ -375,6 +376,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -673,6 +675,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -945,6 +948,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1118,6 +1122,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1196,6 +1201,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1366,6 +1372,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1434,6 +1441,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1578,6 +1586,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1646,6 +1655,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1780,6 +1790,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1985,6 +1996,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 1930616887259021594, guid: e78f7406887f5324ab2a8d32d281c1d6,
+        type: 3}
+      propertyPath: owner
+      value: 
+      objectReference: {fileID: 6603506283302666318}
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
       propertyPath: m_Color.g
@@ -1993,12 +2009,12 @@ PrefabInstance:
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.10617685
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
@@ -2008,7 +2024,7 @@ PrefabInstance:
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
       propertyPath: m_Type
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
@@ -2018,13 +2034,8 @@ PrefabInstance:
     - target: {fileID: 1970850912194010589, guid: e78f7406887f5324ab2a8d32d281c1d6,
         type: 3}
       propertyPath: m_FillOrigin
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1930616887259021594, guid: e78f7406887f5324ab2a8d32d281c1d6,
-        type: 3}
-      propertyPath: owner
-      value: 
-      objectReference: {fileID: 6603506283302666318}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e78f7406887f5324ab2a8d32d281c1d6, type: 3}
 --- !u!224 &8821733386224853939 stripped
